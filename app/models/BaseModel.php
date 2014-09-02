@@ -9,9 +9,7 @@ class BaseModel extends Eloquent
 	protected $errors;
 
     /**
-     * Validate an object on a given input. First it checks to see if the id is set. 
-     * If it is, it adds it to satisfy the unique restraint. Then it returns 
-     * whether or not it passed along with setting errors to the model.
+     * Validate an object on a given input.
      *
      * @return boolean, success
      */
