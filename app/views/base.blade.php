@@ -3,16 +3,16 @@
 <html>
 
 <head>
-	<title>{{ @yield('title') }}</title>
+	<title>@yield('title')</title>
 </head>
 
 <body>
 
-	{{ @include('partials.header') }}
+	@include('partials.header')
 
-	{{ @yield('body') }}
+	@yield('body')
 
-	{{ @include('partials.footer') }}
+	@include('partials.footer')
 
 </body>
 
