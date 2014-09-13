@@ -2,7 +2,7 @@
 
 Route::get('/', function()
 {
-	return View::make('transactions');
+	return View::make('accounts');
 });
 
 Route::group(array('prefix' => 'api'), function()
