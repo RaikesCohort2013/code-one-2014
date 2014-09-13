@@ -33,7 +33,7 @@
 				        $(this).parents('table').find('tr:eq('+rowindex+') td:eq('+cellindex+')').focus()
 				    }
 				  });-->
-          <table id="transaction-list">
+          <table class="transaction-list">
           	<thead>
           		<th><a href="">Date</a></th>
           		<th><a href="">Post Date</a></th>
