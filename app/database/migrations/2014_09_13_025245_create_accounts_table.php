@@ -21,10 +21,12 @@ class CreateAccountsTable extends Migration {
 			$table->string('tran_desc');
 			$table->string('tran_detail_desc')->nullable();
 			$table->string('db_cr_cd');
+			$table->string('category')->nullable();
 			$table->string('post_date');
 			$table->double('tran_amount');
 			$table->string('mcc')->nullable();
 			$table->string('merchant')->nullable();
+			$table->string('sic_code')->nullable();
 			$table->string('presentation')->nullable();
 			$table->timestamps();
 		});

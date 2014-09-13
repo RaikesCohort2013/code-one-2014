@@ -16,7 +16,7 @@ class CreateAutoLoanTable extends Migration {
 		Schema::create('auto_loans', function(Blueprint $table)
 		{
 			$table->increments('id');
-			$table->string('sub-prod_cd');
+			$table->string('sub_prod_cd');
 			$table->integer('account_number');
 			$table->integer('tran_cd');
 			$table->string('tran_desc');
