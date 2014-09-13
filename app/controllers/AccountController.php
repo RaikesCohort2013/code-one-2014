@@ -10,7 +10,7 @@ class AccountController extends BaseController
 	 */
 	public function index()
 	{
-		//
+
 	}
 
 
@@ -31,5 +31,4 @@ class AccountController extends BaseController
 		}
 		return $balance;
 	}
-
 }
