@@ -96,6 +96,13 @@ class AccountSeeder extends BaseSeeder
 			'username'			=> 'Ben Franklin',
 			'name'				=> 'A Penny Saved, A Penny Earned'
 		]);
+
+		Account::create([
+			'account_number'	=> 222222,
+			'type'				=> 'auto_loan',
+			'username'			=> 'Jake Snachez',
+			'name'				=> 'Car Loan'
+		]);
 	}
 
 }
