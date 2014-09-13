@@ -30,6 +30,7 @@ class AccountController extends BaseController
 		{
 			$balance += $t->amount;
 		}
+		$account->transactions = $transactions;
 		$account->balance = $balance;
 		return $this->jsonResponse($account);
 	}
