@@ -406,12 +406,14 @@
             <div class="account-detail-view">
               <div class="activity-container">
                 <span class="activity-label">View Activity in: </span>
-                <select name="">
-                  <option value="">This Week</option>
-                  <option value="">This Month</option>
-                  <option value="">This Year</option>
-                  <option value="">All Time</option>
-                </select>
+                <span class="custom-dropdown custom-dropdown--white">
+                  <select class="custom-dropdown__select custom-dropdown__select--white" name="">
+                    <option value="">This Week</option>
+                    <option value="">This Month</option>
+                    <option value="">This Year</option>
+                    <option value="">All Time</option>
+                  </select>
+                </span>
               </div>
             </div>
           </div>
@@ -428,12 +430,14 @@
             <div class="account-detail-view">
               <div class="activity-container">
                 <span class="activity-label">View Activity in: </span>
-                <select name="">
-                  <option value="">This Week</option>
-                  <option value="">This Month</option>
-                  <option value="">This Year</option>
-                  <option value="">All Time</option>
-                </select>
+                <span class="custom-dropdown custom-dropdown--white">
+                  <select class="custom-dropdown__select custom-dropdown__select--white" name="">
+                    <option value="">This Week</option>
+                    <option value="">This Month</option>
+                    <option value="">This Year</option>
+                    <option value="">All Time</option>
+                  </select>
+                </span>
               </div>
             </div>
           </div>
@@ -450,12 +454,14 @@
             <div class="account-detail-view">
               <div class="activity-container">
                 <span class="activity-label">View Activity in: </span>
-                <select name="">
-                  <option value="">This Week</option>
-                  <option value="">This Month</option>
-                  <option value="">This Year</option>
-                  <option value="">All Time</option>
-                </select>
+                <span class="custom-dropdown custom-dropdown--white">
+                  <select class="custom-dropdown__select custom-dropdown__select--white" name="">
+                    <option value="">This Week</option>
+                    <option value="">This Month</option>
+                    <option value="">This Year</option>
+                    <option value="">All Time</option>
+                  </select>
+                </span>
               </div>
             </div>
           </div>
