@@ -7,7 +7,7 @@ class IraTransactionsSeeder extends BaseSeeder
 	{
 		$this->table = 'ira_transactions';
 		$this->filenames = [
-			'/home/vagrant/Code/Laravel/app/database/csv/ira_transactions.csv'
+			'/home/vagrant/Code/code-one/app/database/csv/ira_transactions.csv'
 		];
 	}
 
