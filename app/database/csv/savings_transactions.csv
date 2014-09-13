@@ -1,4 +1,4 @@
-sub_prod_cd,account_number,tran_cd,tran_desc,tran_detail_desc,db_cr_cd,category,post_date,tran_amount,mcc,merchant,sic_code,presentation
+sub_prod_cd,account_number,tran_cd,tran_desc,tran_detail_desc,db_cr_cd,category,post_date,amount,mcc,merchant,sic_code,presentation
 Savings,32,1118,INTEREST PAYMENT                       ,                                               ,C,Interest Income,6/6/2014,0.01,,#N/A,#N/A,#N/A
 Savings,32,1118,INTEREST PAYMENT                       ,                                               ,C,Interest Income,6/6/2014,0.01,,#N/A,#N/A,#N/A
 Savings,32,1118,INTEREST PAYMENT                       ,                                               ,C,Interest Income,6/6/2014,0.06,,#N/A,#N/A,#N/A

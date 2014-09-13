@@ -1,4 +1,4 @@
-sub_prod_cd,account_number,tran_cd,tran_desc,tran_detail_desc,db_cr_cd,category,post_date,tran_amount,mcc,merchant,sic_code,presentation
+sub_prod_cd,account_number,tran_cd,tran_desc,tran_detail_desc,db_cr_cd,category,post_date,amount,mcc,merchant,sic_code,presentation
 CD,111,03001,CURRENT BALANCE,,,Investment,8/4/2014,10000.00,,#N/A,#N/A,#N/A
 CD,222,03001,CURRENT BALANCE,,,Investment,8/4/2014,10000.00,,#N/A,#N/A,#N/A
 CD,333,03001,CURRENT BALANCE,,,Investment,8/4/2014,10000.00,,#N/A,#N/A,#N/A
