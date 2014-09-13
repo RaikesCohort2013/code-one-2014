@@ -8,4 +8,4 @@ composer.lock
 Thumbs.db
 .idea/
 public/res/.sass-cache/
-public/res/css/
+public/res/stylesheets/
