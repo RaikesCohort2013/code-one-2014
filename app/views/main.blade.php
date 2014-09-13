@@ -22,7 +22,7 @@
         <div id="content-pane">
 
           <h1 id="accounts-title">
-            Accounts
+            Account Summary
           </h1>
 
           <div class="account-view">
