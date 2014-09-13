@@ -17,6 +17,7 @@ class CreateAccountsTable extends Migration {
 			$table->increments('id');
 			$table->integer('account_number');
 			$table->string('type');
+			$table->string('username');
 			$table->string('name');
 			$table->timestamps();
 		});
