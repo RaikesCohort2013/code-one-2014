@@ -15,6 +15,7 @@ class DatabaseSeeder extends Seeder {
 		$this->call('AutoLoanTableSeeder');		
 		$this->call('CheckingTransactionTableSeeder');
 		$this->call('AccountsTableSeeder');
+		$this->call('MccCodesTableSeeder');
 
 	}
 
