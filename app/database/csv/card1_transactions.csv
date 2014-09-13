@@ -1,4 +1,4 @@
-account_number,posting_date,billing_date,date,amount,transaction_code,merchant_name,merchant_city,merchant_state,merchant_category,merchant_type,sic_code,presentation
+account_number,post_date,billing_date,date,amount,transaction_code,merchant_name,merchant_city,merchant_state,merchant_category,merchant_type,sic_code,presentation
 123456789,11/5/2013,12/4/2013,11/3/2013,54.88,5,MONTE CARLO ADV RESERVAT.,LAS VEGAS,NV,3676,Monte Carlo Hotel and Casino,Hotel/Motel,Travel
 123456789,11/5/2013,12/4/2013,11/3/2013,54.88,5,MONTE CARLO ADV RESERVAT.,LAS VEGAS,NV,3676,Monte Carlo Hotel and Casino,Hotel/Motel,Travel
 123456789,11/5/2013,12/4/2013,11/3/2013,54.88,5,MONTE CARLO ADV RESERVAT.,LAS VEGAS,NV,3676,Monte Carlo Hotel and Casino,Hotel/Motel,Travel

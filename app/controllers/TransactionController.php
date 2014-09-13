@@ -26,6 +26,22 @@ class TransactionController extends BaseController
 		//
 	}
 
+	public function showByDate($account_number, $start_date, $end_date)
+	{
+		$account = Account::where('account_number', $account_number)->firstOrFail();
+		$transactions = $account->transactions();
+		$final_trans = [];
+		foreach($transactions as $transaction)
+		{
+			$time = strtotime($transaction->post_date);
+			if($time >= $start_date && $time <= $end_date)
+			{
+				$final_trans[] = $transaction;
+			}
+		}
+		return $this->jsonResponse($final_trans);
+	}
+
 	private function jsonResponse($data)
 	{
 		$response = Response::make(json_encode($data));

@@ -1,4 +1,4 @@
-account_number,posting_date,billing_date,date,amount,transaction_code,merchant_name,merchant_city,merchant_state,merchant_category,merchant_type,sic_code,presentation
+account_number,post_date,billing_date,date,amount,transaction_code,merchant_name,merchant_city,merchant_state,merchant_category,merchant_type,sic_code,presentation
 654321987,12/3/2013,12/5/2013,12/3/2013,-40,65,PAYMENT - THANK YOU,,,,#N/A,#N/A,#N/A
 654321987,1/7/2014,2/4/2014,1/4/2014,165.4,5,S.A.V.E.S. PLLC,WEST LEBANON,NH,742,Veterinary Services,Other Services,Other
 654321987,1/28/2014,2/4/2014,1/26/2014,49.48,5,VERMONT CHINA MOON,WHITE RIVER J,VT,5812,Eating places and Restaurants,Restaurants/Bars,Restaurant

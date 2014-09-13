@@ -107,7 +107,7 @@ class CreateTransactionsTables extends Migration {
 		{
 			$table->increments('id');
 			$table->integer('account_number');
-			$table->string('posting_date');
+			$table->string('post_date');
 			$table->string('billing_date');
 			$table->string('date');
 			$table->double('amount');
