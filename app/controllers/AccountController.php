@@ -40,5 +40,4 @@ class AccountController extends BaseController
 		$response->header('Content-Type', 'application/json');
 		return $response;
 	}
-
 }
