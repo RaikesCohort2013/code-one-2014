@@ -3,15 +3,14 @@ define([
     'underscore',
     'backbone',
     'app',
-    'views/post-view',
-], function($, _, Backbone, App, PostView){
+    'views/account-view',
+], function($, _, Backbone, App, AccountView){
         var AppRouter = Backbone.Router.extend({
             routes: {
-                'blog/*action' : 'renderPost',
                 '*action' : 'renderPost'
             },
-            renderPost: function(postId) {
-                new PostView().render();
+            renderPost: function() {
+                var accountView = new AccountView();
             },
             notFound: function(action) {
                 console.log(action, ': 404 not found');
