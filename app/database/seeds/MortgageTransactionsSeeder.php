@@ -7,7 +7,7 @@ class MortgageTransactionsSeeder extends BaseSeeder
 	{
 		$this->table = 'mortgage_transactions';
 		$this->filenames = [
-			'/home/vagrant/Code/Laravel/app/database/csv/mortgage_transactions.csv'
+			'/home/vagrant/Code/code-one/app/database/csv/mortgage_transactions.csv'
 		];
 	}
 

@@ -7,7 +7,7 @@ class SavingTransactionsSeeder extends BaseSeeder
 	{
 		$this->table = 'savings_transactions';
 		$this->filenames = [
-			'/home/vagrant/Code/Laravel/app/database/csv/savings_transactions.csv'
+			'/home/vagrant/Code/code-one/app/database/csv/savings_transactions.csv'
 		];
 	}
 
