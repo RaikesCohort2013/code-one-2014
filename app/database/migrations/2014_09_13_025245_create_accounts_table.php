@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateCdTable extends Migration {
+class CreateAccountsTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -12,10 +12,10 @@ class CreateCdTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('cds', function(Blueprint $table)
+		Schema::create('accounts', function(Blueprint $table)
 		{
 			$table->increments('id');
-			$table->string('sub-prod_cd');
+			$table->string('sub_prod_cd');
 			$table->integer('account_number');
 			$table->integer('tran_cd');
 			$table->string('tran_desc');
@@ -37,7 +37,7 @@ class CreateCdTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('cds');
+		Schema::drop('accounts');
 	}
 
 }

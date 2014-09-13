@@ -1,0 +1,5 @@
+sub-prod_cd,account_number,tran_cd,tran_desc,tran_detail_desc,db_cr_cd,post_date,tran_amount,mcc,merchant,presentation
+MLS,11111,40021,MORTGAGE PAYMENT,,D,Mortage Payment,5/4/2014,1380.75,,,,
+MLS,11111,40021,MORTGAGE PAYMENT,,D,Mortage Payment,6/4/2014,1380.75,,,,
+MLS,11111,40021,MORTGAGE PAYMENT,,D,Mortage Payment,7/5/2014,1380.75,,,,
+MLS,11111,40021,MORTGAGE PAYMENT,,D,Mortage Payment,8/4/2014,1380.75,,,,

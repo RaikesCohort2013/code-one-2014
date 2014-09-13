@@ -13,7 +13,7 @@ class DatabaseSeeder extends Seeder {
 
 		$this->call('TransactionTableSeeder');
 		$this->call('AutoLoanTableSeeder');
-		$this->call('CdTableSeeder');
+		$this->call('AccountsTableSeeder');
 		$this->call('CheckingTransactionTableSeeder');
 	}
 
