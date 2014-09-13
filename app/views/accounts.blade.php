@@ -11,8 +11,8 @@
         <div id="main-nav">
 
           <ul class="side-nav-list">
-            <a href=""><li>Accounts</li></a>
-            <a href=""><li class="selected-nav-item">Budgets</li></a>
+            <a href=""><li class="selected-nav-item">Accounts</li></a>
+            <a href=""><li>Budgets</li></a>
             <a href=""><li>AutoPayments</li></a>
             <a href=""><li>Account Reports</li></a>
           </ul>
