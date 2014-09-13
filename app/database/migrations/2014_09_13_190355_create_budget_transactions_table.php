@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateBudgetTable extends Migration {
+class CreateBudgetTransactionsTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -12,12 +12,12 @@ class CreateBudgetTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('budgets', function(Blueprint $table)
+		Schema::create('budget_transactions', function(Blueprint $table)
 		{
 			$table->increments('id');
-			$table->integer('account_number');
-			$table->string('name');
-			$table->date('end_date');
+			$table->integer('transaction_id')->unsigned();
+			$table->double('amount');
+			$table->integer('tag_id')->unsigned();
 			$table->timestamps();
 		});
 	}
@@ -29,7 +29,7 @@ class CreateBudgetTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('budgets');
+		Schema::drop('budget_transactions');
 	}
 
 }

@@ -14,6 +14,8 @@ class DatabaseSeeder extends Seeder {
 		$this->call('TransactionsSeeder');
 		$this->call('MccCodesTableSeeder');
 		$this->call('AccountSeeder');
+		$this->call('TagSeeder');
+		$this->call('BudgetSeeder');
 	}
 
 }
