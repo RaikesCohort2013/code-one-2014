@@ -8,6 +8,8 @@ require.config({
         bootstrap: 'lib/bootstrap.min',
         underscore: 'lib/underscore-min',
         backbone: 'lib/backbone-min',
+        morris: 'lib/morris',
+        raphael: 'lib/raphael-min',
     },
     shim: {
         'underscore' : {
@@ -19,6 +21,10 @@ require.config({
         },
         'bootstrap' : {
             deps: ['jquery']
+        },
+        'morris' : {
+            deps: ['jquery','raphael'],
+            exports: 'Morris'
         },
     }
 });

@@ -1,4 +1,4 @@
-define('app', ['jquery', 'underscore', 'backbone', 'router', 'album_art', 'nav'],
+define('app', ['jquery', 'underscore', 'backbone', 'router'],
     function($, _, Backbone, Router) {
         var init = function() {
             var router = new Router();
