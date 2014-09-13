@@ -1,7 +1,5 @@
 <?php
 
-use Eloquent, Validator;
-
 class BaseModel extends Eloquent
 {
 
