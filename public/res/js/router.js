@@ -3,20 +3,15 @@ define([
     'underscore',
     'backbone',
     'app',
-    'views/music-view',
-    'views/favorites-view',
-    'views/followings-view',
-    'views/news-view',
-    'views/about-view',
     'views/post-view',
-], function($, _, Backbone, App, MusicView, FavoritesView, FollowingsView, NewsView, AboutView, PostView){
+], function($, _, Backbone, App, PostView){
         var AppRouter = Backbone.Router.extend({
             routes: {
                 'blog/*action' : 'renderPost',
-                '*action' : 'notFound'
+                '*action' : 'renderPost'
             },
             renderPost: function(postId) {
-                new PostView().render(postId);
+                new PostView().render();
             },
             notFound: function(action) {
                 console.log(action, ': 404 not found');

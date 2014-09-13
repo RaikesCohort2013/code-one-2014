@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateAccountsTable extends Migration {
+class CreateBudgetTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -12,13 +12,12 @@ class CreateAccountsTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('accounts', function(Blueprint $table)
+		Schema::create('budgets', function(Blueprint $table)
 		{
 			$table->increments('id');
-			$table->integer('account_number')->unsigned();
-			$table->string('type');
-			$table->string('username');
+			$table->integer('account_number');
 			$table->string('name');
+			$table->date('end_date');
 			$table->timestamps();
 		});
 	}
@@ -30,7 +29,7 @@ class CreateAccountsTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('accounts');
+		Schema::drop('budgets');
 	}
 
 }

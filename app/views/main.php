@@ -44,8 +44,34 @@
   });
 </script>
 
+<style type="text/css">
+  .morris-hover {
+    position:absolute;
+    z-index:1000
+  }
+  .morris-hover.morris-default-style {
+    border-radius:10px;
+    padding:6px;
+    color:#666;
+    background:
+    rgba(255,255,255,0.8);
+    border:solid 2px rgba(230,230,230,0.8);
+    font-family:sans-serif;
+    font-size:12px;text-align:center
+  }
+  .morris-hover.morris-default-style .morris-hover-row-label {
+    font-weight:bold;
+    margin:0.25em 0
+  }
+  .morris-hover.morris-default-style .morris-hover-point { 
+    white-space:nowrap;
+    margin:0.1em 0
+  }
+</style>
+
 <script src="./MarketingWeb/internet_tip/shared-content-library/config/js/global.onload.js" type="text/javascript"></script>
 <script src="./MarketingWeb/internet_tip/shared-content-library/config/js/functions.js" type="text/javascript"></script>
+<script src="res/js/lib/require.js" data-main="res/js/main" type="application/javascript"></script>
 
 <!-- awkward-showcase -->
 <link rel="stylesheet" href="./MarketingWeb/internet_tip/shared-content-library/config/css/jquery.awkward-showcase-homepage.css" />
@@ -77,6 +103,7 @@
 
 <!-- Global Freemarker Variables -->
 <!-- Global Freemarker Variables -->
+
 </head>
 <body id="bodyid" class="bodyclass">
 <div id="wrapper">
@@ -352,6 +379,10 @@
                   </select>
                 </span>
               </div>
+
+              <div id="graph" class="graph" style="margin: 0 0 0 0; display: inline-block;"></div>
+              <div id="barGraph" class="graph" style="width: 45%; height: 200px; display: inline-block; margin: 0 0 0 0; "></div>
+
             </div>
           </div>
 
