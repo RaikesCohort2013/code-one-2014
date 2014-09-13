@@ -8,6 +8,15 @@ div#wrapper div#wrapper2 div.container div#section3 div#main-nav ul.side-nav-lis
   -webkit-padding-start: 0px;
 }
 /* line 7, ../sass/main-override.sass */
+div#wrapper div#wrapper2 div.container div#section3 div#main-nav ul.side-nav-list a {
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: bold;
+  font-style: inherit;
+  font-weight: bold;
+}
+/* line 14, ../sass/main-override.sass */
 div#wrapper div#wrapper2 div.container div#section3 div#main-nav ul.side-nav-list li {
   background-color: #0d723c;
   list-style-type: none;
@@ -15,31 +24,21 @@ div#wrapper div#wrapper2 div.container div#section3 div#main-nav ul.side-nav-lis
   padding-top: 20px;
   padding-bottom: 20px;
   border-bottom: solid white 1px;
+  border-radius: 5px;
+  margin-bottom: 3px;
 }
-/* line 14, ../sass/main-override.sass */
+/* line 23, ../sass/main-override.sass */
 div#wrapper div#wrapper2 div.container div#section3 div#main-nav ul.side-nav-list li.selected-nav-item {
   background-color: #4aaa42;
 }
-/* line 16, ../sass/main-override.sass */
-div#wrapper div#wrapper2 div.container div#section3 div#main-nav ul.side-nav-list li a {
-  color: white;
-  text-decoration: none;
-  font-size: 1em;
-  font-weight: bold;
-  font-style: inherit;
-}
-/* line 22, ../sass/main-override.sass */
-div#wrapper div#wrapper2 div.container div#section3 div#main-nav ul.side-nav-list li a.hover {
-  font-weight: bold;
-}
-/* line 24, ../sass/main-override.sass */
+/* line 25, ../sass/main-override.sass */
 div#wrapper div#wrapper2 div.container div#section3 div#content-pane {
   background-color: #eee;
   width: 750px;
   float: left;
   margin-left: 10px;
 }
-/* line 25, ../sass/main-override.sass */
+/* line 26, ../sass/main-override.sass */
 div#wrapper div#wrapper2 div.container div#section3 div#content-pane h1 {
   font-size: 3em;
   font-weight: bold;
@@ -49,7 +48,7 @@ div#wrapper div#wrapper2 div.container div#section3 div#content-pane h1 {
   text-align: center;
   color: #555;
 }
-/* line 38, ../sass/main-override.sass */
+/* line 39, ../sass/main-override.sass */
 div#wrapper div#wrapper2 div.container div#section3 div#content-pane div.account-view div.account-header {
   background-color: #0d723c;
   padding-top: 10px;
@@ -58,14 +57,14 @@ div#wrapper div#wrapper2 div.container div#section3 div#content-pane div.account
   margin-left: 7px;
   margin-right: 7px;
 }
-/* line 45, ../sass/main-override.sass */
+/* line 46, ../sass/main-override.sass */
 div#wrapper div#wrapper2 div.container div#section3 div#content-pane div.account-view div.account-detail-view {
   margin-left: 7px;
   margin-right: 7px;
   margin-bottom: 25px;
   background-color: white;
 }
-/* line 51, ../sass/main-override.sass */
+/* line 52, ../sass/main-override.sass */
 div#wrapper div#wrapper2 div.container div#section3 div#content-pane div.account-view div.account-header span {
   background-color: #0d723c;
   padding-left: 10px;
@@ -74,25 +73,25 @@ div#wrapper div#wrapper2 div.container div#section3 div#content-pane div.account
   font-size: 1.3em;
   font-style: inherit;
 }
-/* line 58, ../sass/main-override.sass */
+/* line 59, ../sass/main-override.sass */
 div#wrapper div#wrapper2 div.container div#section3 div#content-pane div.account-view div.account-header > .account-name {
   float: left;
 }
 
-/* line 61, ../sass/main-override.sass */
+/* line 62, ../sass/main-override.sass */
 .account-no-label, .account-no, .acconut-bal-label {
   float: left;
 }
 
-/* line 66, ../sass/main-override.sass */
+/* line 67, ../sass/main-override.sass */
 div#wrapper div#wrapper2 div.container div#section3 div#content-pane div.account-view div.account-header span.account-no-label, div#wrapper div#wrapper2 div.container div#section3 div#content-pane div.account-view div.account-header span.account-bal-label {
   padding-left: 80px;
 }
-/* line 68, ../sass/main-override.sass */
+/* line 69, ../sass/main-override.sass */
 div#wrapper div#wrapper2 div.container div#section3 div#content-pane div.account-view div.account-header span.account-no {
   padding-left: 0px;
 }
-/* line 70, ../sass/main-override.sass */
+/* line 71, ../sass/main-override.sass */
 div#wrapper div#wrapper2 div.container div#section3 div#content-pane div.account-view div.account-header span.account-balance {
   background-color: white;
   color: black;
@@ -100,7 +99,7 @@ div#wrapper div#wrapper2 div.container div#section3 div#content-pane div.account
   padding-bottom: 5px;
   font-weight: bold;
 }
-/* line 77, ../sass/main-override.sass */
+/* line 78, ../sass/main-override.sass */
 div#wrapper div#wrapper2 div.container div#section3 div#content-pane div.account-view div.account-detail-view span.activity-label {
   color: #555;
   font-size: 1.4em;
@@ -108,14 +107,7 @@ div#wrapper div#wrapper2 div.container div#section3 div#content-pane div.account
   padding-left: 40px;
   padding-right: 10px;
 }
-/* line 83, ../sass/main-override.sass */
+/* line 84, ../sass/main-override.sass */
 div#wrapper div#wrapper2 div.container div#section3 div#content-pane div.account-view div.account-detail-view div.activity-container {
   padding-top: 15px;
-}
-
-/* line 86, ../sass/main-override.sass */
-#graph {
-  width: 50%;
-  height: 200px;
-  margin: 0 0 0 0;
 }

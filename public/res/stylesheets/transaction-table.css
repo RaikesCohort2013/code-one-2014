@@ -1,0 +1,47 @@
+/* line 1, ../sass/transaction-table.sass */
+table#transaction-list {
+  border: 1px solid black;
+  width: 730px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  collapse: collapse;
+}
+
+/* line 9, ../sass/transaction-table.sass */
+table#transaction-list th, td {
+  border: 1px solid black;
+  background-color: white;
+  font-style: inherit;
+  padding: 7px 10px 7px 10px;
+}
+
+/* line 15, ../sass/transaction-table.sass */
+table#transaction-list th {
+  color: white;
+  background-color: #0d723c;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+/* line 22, ../sass/transaction-table.sass */
+table#transaction-list td.amount {
+  text-align: right;
+}
+
+/* line 25, ../sass/transaction-table.sass */
+table#transaction-list th.selected {
+  background-color: #005012;
+}
+
+/* line 28, ../sass/transaction-table.sass */
+table#transaction-list th a {
+  color: white;
+  text-decoration: none;
+}
+
+/* line 32, ../sass/transaction-table.sass */
+table#transaction-list td {
+  contenteditable: true;
+}

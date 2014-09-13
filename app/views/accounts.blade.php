@@ -11,10 +11,10 @@
         <div id="main-nav">
 
           <ul class="side-nav-list">
-            <li><a href="">Accounts</a></li>
-            <li class="selected-nav-item"><a href="">Budgets</a></li>
-            <li><a href="">AutoPayments</a></li>
-            <li><a href="">Account Reports</a></li>
+            <a href=""><li class="selected-nav-item">Accounts</li></a>
+            <a href=""><li>Budgets</li></a>
+            <a href=""><li>AutoPayments</li></a>
+            <a href=""><li>Account Reports</li></a>
           </ul>
 
         </div>
@@ -37,18 +37,16 @@
             <div class="account-detail-view">
               <div class="activity-container">
                 <span class="activity-label">View Activity in: </span>
-                <span class="custom-dropdown custom-dropdown--white">
-                  <select class="custom-dropdown__select custom-dropdown__select--white" name="">
+                <select name="">
                     <option value="">This Week</option>
                     <option value="">This Month</option>
                     <option value="">This Year</option>
                     <option value="">All Time</option>
-                  </select>
-                </span>
+                </select>
               </div>
 
-              <div id="graph" class="graph" style="margin: 0 0 0 0; display: inline-block;"></div>
-              <div id="barGraph" class="graph" style="width: 45%; height: 200px; display: inline-block; margin: 0 0 0 0; "></div>
+              <div id="graph" class="graph"></div>
+              <div id="barGraph" class="graph"></div>
 
             </div>
           </div>
@@ -65,14 +63,12 @@
             <div class="account-detail-view">
               <div class="activity-container">
                 <span class="activity-label">View Activity in: </span>
-                <span class="custom-dropdown custom-dropdown--white">
-                  <select class="custom-dropdown__select custom-dropdown__select--white" name="">
+                  <select name="">
                     <option value="">This Week</option>
                     <option value="">This Month</option>
                     <option value="">This Year</option>
                     <option value="">All Time</option>
                   </select>
-                </span>
               </div>
             </div>
           </div>
@@ -89,14 +85,12 @@
             <div class="account-detail-view">
               <div class="activity-container">
                 <span class="activity-label">View Activity in: </span>
-                <span class="custom-dropdown custom-dropdown--white">
-                  <select class="custom-dropdown__select custom-dropdown__select--white" name="">
+                  <select name="">
                     <option value="">This Week</option>
                     <option value="">This Month</option>
                     <option value="">This Year</option>
                     <option value="">All Time</option>
                   </select>
-                </span>
               </div>
             </div>
           </div>
