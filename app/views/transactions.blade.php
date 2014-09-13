@@ -11,10 +11,10 @@
         <div id="main-nav">
 
           <ul class="side-nav-list">
-            <li><a href="">Transactions</a></li>
-            <li class="selected-nav-item"><a href="">Tag By Person</a></li>
-            <li><a href="">Tag by Category</a></li>
-            <li><a href="">Filter Transactions</a></li>
+            <a href=""><li>Transactions</li></a>
+            <a href=""><li class="selected-nav-item">Tag By Person</li></a>
+            <a href=""><li>Tag by Category</li></a>
+            <a href=""><li>Filter Transactions</li></a>
           </ul>
 
         </div>
@@ -48,7 +48,7 @@
           		<td contenteditable>Bought Crack Cocaine</td>
           		<td contenteditable></td>
           		<td contenteditable></td>
-          		<td class="amount">3,467.21</td>
+          		<td class="amount">$3,467.21</td>
           	</tr>
           	<tr>
           		<td>11-20-2014</td>
@@ -56,7 +56,7 @@
           		<td contenteditable>Bought Your Mom</td>
           		<td contenteditable></td>
           		<td contenteditable></td>
-          		<td class="amount">3.70</td>
+          		<td class="amount">$3.70</td>
           	</tr>
           </table>
 

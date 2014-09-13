@@ -11,10 +11,10 @@
         <div id="main-nav">
 
           <ul class="side-nav-list">
-            <li><a href="">Accounts</a></li>
-            <li class="selected-nav-item"><a href="">Budgets</a></li>
-            <li><a href="">AutoPayments</a></li>
-            <li><a href="">Account Reports</a></li>
+            <a href=""><li>Accounts</li></a>
+            <a href=""><li class="selected-nav-item">Budgets</li></a>
+            <a href=""><li>AutoPayments</li></a>
+            <a href=""><li>Account Reports</li></a>
           </ul>
 
         </div>
