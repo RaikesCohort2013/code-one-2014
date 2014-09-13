@@ -11,6 +11,10 @@ class AccountController extends BaseController
 	public function index()
 	{
 		$accounts = Account::all();
+		foreach($accounts as $account)
+		{
+			$account = $this->addBalanceToAccount($account);
+		}
 		return $this->jsonResponse($accounts);
 	}
 
@@ -25,14 +29,20 @@ class AccountController extends BaseController
 	{
 		$account = Account::where('account_number', $account_number)->firstOrFail();
 		$transactions = $account->transactions();
+		$account = $this->addBalanceToAccount($account);
+		return $this->jsonResponse($account);
+	}
+
+	private function addBalanceToAccount($account)
+	{
+		$transactions = $account->transactions();
 		$balance = 0;
 		foreach($transactions as $t)
 		{
 			$balance += $t->amount;
 		}
-		$account->transactions = $transactions;
 		$account->balance = $balance;
-		return $this->jsonResponse($account);
+		return $account;
 	}
 
 	private function jsonResponse($data)

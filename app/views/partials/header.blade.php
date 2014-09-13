@@ -24,6 +24,7 @@
 <link media="screen, print" type="text/css" rel="stylesheet" href="./MarketingWeb/internet_tip/shared-content-library/config/css/content-homepage-buttons.css"/>
 <link media="screen, print" type="text/css" rel="stylesheet" href="res/stylesheets/main-override.css"/>
 <link media="screen, print" type="text/css" rel="stylesheet" href="res/stylesheets/morris-graphs.css"/>
+<link media="screen, print" type="text/css" rel="stylesheet" href="res/stylesheets/transaction-table.css"/>
 <!--[if IE 7]>
     <link href="./MarketingWeb/internet_tip/shared-content-library/config/css/content-ie7.css" rel="stylesheet" type="text/css" media="screen, print" />
   <![endif]-->
