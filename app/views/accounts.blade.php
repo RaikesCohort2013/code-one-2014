@@ -21,7 +21,7 @@
 
         <div id="content-pane">
 
-          <h1 id="accounts-title">
+          <h1>
             Account Summary
           </h1>
           <div id="main-accounts">
