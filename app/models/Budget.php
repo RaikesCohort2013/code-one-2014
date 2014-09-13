@@ -3,11 +3,9 @@
 class Budget extends BaseModel
 {
 	
-	protected $table = 'budgets';
-
-	public function account()
+	public function tag()
 	{
-		return $this->belongsTo('Account', 'account_number', 'account_number');
+		return $this->hasOne('Tag');
 	}
 
 }
