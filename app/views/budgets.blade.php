@@ -59,7 +59,7 @@
         </div>
 
         <div id="content-pane">
-        	<h1 id="accounts-title">
+        	<h1>
             Budgets
           	</h1>
 
@@ -78,7 +78,7 @@
           		<div class="budget-item">
           			<div class="category">
 	          			<span class="name">Food</span>
-	          			<a href="" class="alert"><span class="alert">Add Alert</span></a>
+	          			<a href="#" class="alert"><span class="alert">Add Alert</span></a>
 	          			<div class="frac">
 		          			<span class="current">$65</span>
 		          			<span class="total">/ $85</span>
@@ -91,7 +91,7 @@
           		<div class="budget-item">
           			<div class="category">
 	          			<span class="name">Gas</span>
-	          			<a href="" class="alert"><span class="alert">Add Alert</span></a>
+	          			<a href="#" class="alert"><span class="alert">Add Alert</span></a>
 	          			<div class="frac">
 		          			<span class="current">$65</span>
 		          			<span class="total">/ $215</span>
@@ -104,7 +104,7 @@
           		<div class="budget-item">
           			<div class="category">
 	          			<span class="name">Groceries</span>
-	          			<a href="" class="alert"><span class="alert">Add Alert</span></a>
+	          			<a href="#" class="alert"><span class="alert">Add Alert</span></a>
 	          			<div class="frac">
 		          			<span class="current">$118</span>
 		          			<span class="total">/ $120</span>

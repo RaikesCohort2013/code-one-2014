@@ -152,7 +152,7 @@ div#wrapper div#wrapper2 div.container div#section3 div#content-pane div.past-bu
 /* line 107, ../sass/main-override.sass */
 div#wrapper div#wrapper2 div.container div#section3 div#content-pane div.current-budget progress::-webkit-progress-value,
 div#wrapper div#wrapper2 div.container div#section3 div#content-pane div.past-budgets progress::-webkit-progress-value {
-  background: #33f;
+  background: #333;
 }
 /* line 109, ../sass/main-override.sass */
 div#wrapper div#wrapper2 div.container div#section3 div#content-pane div.current-budget div.budget-item,

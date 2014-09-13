@@ -20,7 +20,7 @@
         </div>
 
         <div id="content-pane">
-        	<h1 id="accounts-title">
+        	<h1>
             Transaction History
           </h1>
 
