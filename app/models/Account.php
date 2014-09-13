@@ -5,7 +5,7 @@ class Account extends BaseModel
 	
 	public function transactions()
 	{
-		return DB::select('select * from '.$this->type.'_transactions');
+		return Transaction::where('account_number', $this->account_number)->get();
 	}
 
 }

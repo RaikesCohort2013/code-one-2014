@@ -3,11 +3,14 @@
 class Transaction extends BaseModel
 {
 
-	protected $table = 'transactions';
-
 	public function account()
 	{
-		return $this->belongsTo('Account');
+		return Account::where('account_number', $this->account_number)->first();
+	}
+
+	public function mccCode()
+	{
+		return MccCode::where('sic_code', $this->mcc)->first();
 	}
 	
 }
