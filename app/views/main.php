@@ -354,8 +354,9 @@
                 </span>
               </div>
 
-              <div id="graph">
-              </div>
+              <div id="graph" class="graph"></div>
+              <div id="barGraph" class="graph"></div>
+
             </div>
           </div>
 
