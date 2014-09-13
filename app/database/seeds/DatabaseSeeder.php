@@ -15,7 +15,11 @@ class DatabaseSeeder extends Seeder {
 		$this->call('CardTransactionsSeeder');
 		$this->call('CdTransactionsSeeder');
 		$this->call('CheckingTransactionsSeeder');
+		$this->call('IraTransactionsSeeder');
+		$this->call('MortgageTransactionsSeeder');
+		$this->call('SavingTransactionsSeeder');
 		$this->call('MccCodesTableSeeder');
+		$this->call('AccountSeeder');
 	}
 
 }
