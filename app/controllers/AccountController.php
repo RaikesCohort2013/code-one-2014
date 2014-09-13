@@ -22,8 +22,14 @@ class AccountController extends BaseController
 	 */
 	public function show($account_number)
 	{
-		//
+		$account = Account::where('account_number', $account_number)->firstOrFail();
+		$transactions = $account->transactions();
+		$balance = 0;
+		foreach($transactions as $t)
+		{
+			$balance += $t->tran_amount;
+		}
+		return $balance;
 	}
-
 
 }
