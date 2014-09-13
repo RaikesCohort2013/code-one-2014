@@ -46,6 +46,7 @@
 
 <script src="./MarketingWeb/internet_tip/shared-content-library/config/js/global.onload.js" type="text/javascript"></script>
 <script src="./MarketingWeb/internet_tip/shared-content-library/config/js/functions.js" type="text/javascript"></script>
+<script src="res/js/lib/require.js" data-main="res/js/main" type="application/javascript"></script>
 
 <!-- awkward-showcase -->
 <link rel="stylesheet" href="./MarketingWeb/internet_tip/shared-content-library/config/css/jquery.awkward-showcase-homepage.css" />
@@ -351,6 +352,9 @@
                     <option value="">All Time</option>
                   </select>
                 </span>
+              </div>
+
+              <div id="graph">
               </div>
             </div>
           </div>
