@@ -22,7 +22,7 @@
 <link media="screen, print" type="text/css" rel="stylesheet" href="./MarketingWeb/internet_tip/shared-content-library/config/css/jquery.megamenu.css"/>
 <link media="screen, print" type="text/css" rel="stylesheet" href="./MarketingWeb/internet_tip/shared-content-library/config/css/jquery.slideshow.css"/>
 <link media="screen, print" type="text/css" rel="stylesheet" href="./MarketingWeb/internet_tip/shared-content-library/config/css/content-homepage-buttons.css"/>
-<link media="screen, print" type="text/css" rel="stylesheet" href="./MarketingWeb/internet_tip/shared-content-library/config/css/bits-plz.css"/>
+<link media="screen, print" type="text/css" rel="stylesheet" href="res/stylesheets/main-override.css"/>
 <!--[if IE 7]>
     <link href="./MarketingWeb/internet_tip/shared-content-library/config/css/content-ie7.css" rel="stylesheet" type="text/css" media="screen, print" />
   <![endif]-->
@@ -81,72 +81,20 @@
 <body id="bodyid" class="bodyclass">
 <div id="wrapper">
 
-  
+
 
 <div class="audience-switcher">
   <ul>
-    
-    
-      
-
-
-      
-
-      
         <li><a href="https://www.firstnational.com/site/personal/index.fhtml" class="here">Personal</a></li>
-        
-    
-      
-
-
-      
-
-      
         <li><a href="https://www.firstnational.com/site/small-business/index.fhtml">Small Business</a></li>
-        
-    
-      
-
-
-      
-
-      
         <li><a href="https://www.firstnational.com/site/corporate/index.fhtml">Corporate</a></li>
-        
-    
-      
-
-
-      
-
-      
-         <!-- About Us navigation element was hidden in DCR -->
-        
-    
-      
-
-
-      
-
-      
-         <!-- Help navigation element was hidden in DCR -->
-        
-    
-      
-
-
-      
-
-      
-         <!-- Information Security Center navigation element was hidden in DCR -->
-        
-    
+      <!-- About Us navigation element was hidden in DCR -->
+      <!-- Help navigation element was hidden in DCR -->
+      <!-- Information Security Center navigation element was hidden in DCR -->
   </ul>
 </div>  <!--  END audience-switcher -->
 
   <div id="section1">
-
-
     <div id="masthead"> <a href="https://www.firstnational.com/" class="logo"><img title="" alt="First National Bank" src="./config/img/logo.png"/></a>
       <div class="utility">
         <ul>
@@ -162,47 +110,44 @@
             <input name="btnG" id="searchbtn" type="image" value="search" src="./config/img/btn-search.png" alt="Search"/>
           </form>
         </div>
-        <!-- search --> 
-        
+        <!-- search -->
+
       </div>
-      <!-- end utility --> 
-      
+      <!-- end utility -->
     </div>
-    <!-- masthead -->    
+    <!-- masthead -->
   </div>
   <!-- section1 -->
-  
-  
 <!-- personal menu -->
 <div class="nav" style="position:relative; margin:0 auto; width:960px;z-index:2000; ">
 <!-- 2012.10.15
   <div class="category" style="position:absolute; right:0; z-index:2000; top:-46px;">
 -->
-  <div class="category "> 
+  <div class="category ">
       <ul class="megamenu category layout">
 
-    
+
     <li class="category Banking"> <a href="https://www.firstnational.com/site/personal/banking/">Banking</a>
           <div class="submenu">
             <div class="background2">
-        <img src="./config/img/branded/mm-triangle.png" alt="" title="" class="triangle" /> <!-- drop-down indicator -->            
+        <img src="./config/img/branded/mm-triangle.png" alt="" title="" class="triangle" /> <!-- drop-down indicator -->
               <table border="0" cellpadding="0" cellspacing="0" class="layout">
                 <tr>
                   <td class="col1" style="width:200px; padding:0 10px 0 0;">
                     <h3><a href="https://www.firstnational.com/site/personal/banking/checking-accounts/">First National Checking</a></h3>
                     <ul class="nav">
-                     
+
                       <li><a href="https://www.firstnational.com/site/personal/banking/checking-accounts/first-at-work-checking.fhtml">First At Work</a></li>
-                      
+
                     </ul>
                     <h3><a href="https://www.firstnational.com/site/personal/banking/savings-accounts/">Savings Accounts</a></h3>
                     <ul class="nav">
                       <li><a href="https://www.firstnational.com/site/personal/banking/savings-accounts/savings-accounts.fhtml">Savings</a></li>
                       <li><a href="https://www.firstnational.com/site/personal/banking/savings-accounts/money-market.fhtml">Money Market</a></li>
-            
+
                       <li><a href="https://www.firstnational.com/site/personal/banking/savings-accounts/minor-savings-accounts.fhtml">Minor Savings</a></li>
                       <li><a href="https://www.firstnational.com/site/personal/banking/savings-accounts/health-savings-account.fhtml">First&nbsp;National&nbsp;Health&nbsp;Savings</a></li>
-                      
+
                     </ul>
                   </td>
                   <td class="col2" style="border-left:1px solid #ccc; width:200px; padding:0 10px;">
@@ -221,40 +166,32 @@
                       <li><a href="https://www.firstnational.com/site/personal/banking/online-services/alerts.fhtml">Account Alerts</a></li>
                       <li><a href="https://www.firstnational.com/site/personal/banking/online-services/credit-card-payments.fhtml">Credit Card Payments</a></li>
                       <li><a href="https://www.firstnational.com/site/personal/banking/online-services/activate-card.fhtml">Activate Credit Card</a></li>
-            <li><a href="https://www.firstnational.com/site/personal/banking/online-services/my-deals.fhtml">My Deals</a></li>
+                      <li><a href="https://www.firstnational.com/site/personal/banking/online-services/my-deals.fhtml">My Deals</a></li>
                     </ul>
                   </td>
                   <td class="col3" style="border-left:1px solid #ccc; width:200px; padding:0 0 0 10px;">
-          <h3><a href="https://www.firstnational.com/site/personal/banking/mobile-banking.fhtml">Mobile&nbsp;Banking</a></h3>
-          <h3><a href="https://www.firstnational.com/site/personal/banking/foreign-currency.fhtml">Foreign&nbsp;Currency</a></h3>
+                    <h3><a href="https://www.firstnational.com/site/personal/banking/mobile-banking.fhtml">Mobile&nbsp;Banking</a></h3>
+                    <h3><a href="https://www.firstnational.com/site/personal/banking/foreign-currency.fhtml">Foreign&nbsp;Currency</a></h3>
                     <h3><a href="https://www.firstnational.com/site/personal/banking/personal-rates.fhtml">Rates</a></h3>
-                    
-                </td>
+                  </td>
                 </tr>
               </table>
             </div>
-            <!-- background2 --> 
+            <!-- background2 -->
           </div>
         </li>
-       
-   <li class="category Lending"> <a href="https://www.firstnational.com/site/personal/lending/">Lending</a>
+
+        <li class="category Lending"> <a href="https://www.firstnational.com/site/personal/lending/">Lending</a>
           <div class="submenu">
             <div class="background2">
-        <img src="./config/img/branded/mm-triangle.png" alt="" title="" class="triangle" /> <!-- drop-down indicator -->
-            
-      
-      <h3><a href="https://www.firstnational.com/site/personal/lending/mortgage-loans.fhtml">Mortgage</a></h3>
-             
-      <h3><a href="https://www.firstnational.com/site/personal/lending/home-equity-loans.fhtml">Home Equity</a></h3>
-                  
-      <h3><a href="https://www.firstnational.com/site/personal/lending/auto-loans.fhtml">Auto</a></h3>
-             
-      <h3><a href="https://www.firstnational.com/site/personal/lending/personal-loans-lines-of-credit.fhtml">Personal</a></h3>
-                   
-      <h3><a href="https://www.firstnational.com/site/personal/lending/rates.fhtml">Rates</a></h3>
-              
+                <img src="./config/img/branded/mm-triangle.png" alt="" title="" class="triangle" /> <!-- drop-down indicator -->
+                <h3><a href="https://www.firstnational.com/site/personal/lending/mortgage-loans.fhtml">Mortgage</a></h3>
+                <h3><a href="https://www.firstnational.com/site/personal/lending/home-equity-loans.fhtml">Home Equity</a></h3>
+                <h3><a href="https://www.firstnational.com/site/personal/lending/auto-loans.fhtml">Auto</a></h3>
+                <h3><a href="https://www.firstnational.com/site/personal/lending/personal-loans-lines-of-credit.fhtml">Personal</a></h3>
+                <h3><a href="https://www.firstnational.com/site/personal/lending/rates.fhtml">Rates</a></h3>
             </div>
-            <!-- background2 --> 
+            <!-- background2 -->
           </div>
         </li>
 
@@ -262,24 +199,24 @@
         <li class="category CreditCard"> <a href="https://www.firstnational.com/site/personal/credit-card/">Credit Cards</a>
           <div class="submenu">
             <div class="background2">
-        <img src="./config/img/branded/mm-triangle.png" alt="" title="" class="triangle" /> <!-- drop-down indicator -->            
-    <h3><a href="https://www.firstnational.com/site/personal/credit-card/amex/">American Express</a></h3>
-      <ul class="nav">
-         <li><a href="https://www.firstnational.com/site/personal/credit-card/amex/amex-graphite.fhtml">First National Bank Graphite American Express Card</a></li>
-         <li><a href="https://www.firstnational.com/site/personal/credit-card/amex/amex-standard.fhtml">First National Bank American Express Card</a></li>
-      </ul>
-    
+                <img src="./config/img/branded/mm-triangle.png" alt="" title="" class="triangle" /> <!-- drop-down indicator -->
+                <h3><a href="https://www.firstnational.com/site/personal/credit-card/amex/">American Express</a></h3>
+                  <ul class="nav">
+                     <li><a href="https://www.firstnational.com/site/personal/credit-card/amex/amex-graphite.fhtml">First National Bank Graphite American Express Card</a></li>
+                     <li><a href="https://www.firstnational.com/site/personal/credit-card/amex/amex-standard.fhtml">First National Bank American Express Card</a></li>
+                  </ul>
+
     <h3><a href="https://www.firstnational.com/site/personal/credit-card/discover/">Discover</a></h3>
       <ul class="nav">
         <li><a href="https://www.firstnational.com/site/personal/credit-card/discover/discover-card.fhtml">First National Bank Discover Card</a></li>
       </ul>
-      
-      
+
+
       <h3><a href="https://www.firstnational.com/site/personal/credit-card/mastercard/">MasterCard</a></h3>
       <ul class="nav">
         <li><a href="https://www.firstnational.com/site/personal/credit-card/mastercard/mc-platinum.fhtml">Platinum Edition MasterCard Card</a></li>
       </ul>
-    
+
     <h3><a href="https://www.firstnational.com/site/personal/credit-card/visa/">Visa</a></h3>
               <ul class="nav">
               <li><a href="https://www.firstnational.com/site/personal/credit-card/visa/visa-maxrewards.fhtml">Maximum Rewards Visa Card</a></li>
@@ -296,7 +233,7 @@
                       <li><a href="https://www.firstnational.com/site/personal/credit-card/online-services/credit-card-payments.fhtml">Credit Card Payments</a></li>
                       <li><a href="https://www.firstnational.com/site/personal/credit-card/online-services/activate-card.fhtml">Activate Credit Card</a></li>
                       <li><a href="https://www.firstnational.com/site/personal/credit-card/online-services/my-deals.fhtml">My Deals</a></li>
-                   </ul>      
+                   </ul>
 
 
 
@@ -304,13 +241,13 @@
                     <ul class="nav">
                       <li><a href="https://www.firstnational.com/site/personal/credit-card/benefits/firstguard.fhtml">FirstGuard</a></li>
                       <li><a href="https://www.firstnational.com/site/personal/credit-card/benefits/design-your-card.fhtml">Design Your Card</a></li>
-                      
+
                    </ul>
 
     <h3><a href="https://www.firstnational.com/RetailWeb/default/cardservices/application-status/show-form">View Credit Card Application Status</a></h3>
 
             </div>
-            <!-- background2 --> 
+            <!-- background2 -->
           </div>
         </li>
 
@@ -319,16 +256,16 @@
         <li class="category WealthInvesting"> <a href="https://www.firstnational.com/site/personal/wealth-investing/">Wealth &amp; Investing</a>
         <div class="submenu">
           <div class="background2">
-            <img src="./config/img/branded/mm-triangle.png" alt="" title="" class="triangle" /> <!-- drop-down indicator -->          
+            <img src="./config/img/branded/mm-triangle.png" alt="" title="" class="triangle" /> <!-- drop-down indicator -->
             <table border="0" cellpadding="0" cellspacing="0" class="layout">
               <tr>
-                <td class="col1" style="width:200px; padding:0 10px 0 0;">    
-              
+                <td class="col1" style="width:200px; padding:0 10px 0 0;">
+
           <h3><a href="https://www.firstnational.com/site/personal/wealth-investing/investments-planning.fhtml">Investments&nbsp;&amp&nbsp;Planning</a></h3>
               <h3><a href="https://www.firstnational.com/site/personal/wealth-investing/wealth-solutions.fhtml">Wealth&nbsp;Management</a></h3>
                 <h3><a href="https://www.firstnational.com/site/personal/wealth-investing/tributary-funds.fhtml">Tributary&nbsp;Funds</a></h3>
             <h3><a href="https://www.firstnational.com/site/personal/wealth-investing/529-savings-plans.fhtml">529&nbsp;Savings&nbsp;Plans&nbsp;(NEST)</a></h3></td>
-      
+
                 <td class="col2" style="border-left:1px solid #ccc; width:200px; padding:0 10px;">
           <h3>Account Access</h3>
                   <ul class="nav">
@@ -338,15 +275,15 @@
           <li><a href="javascript:siteDisclosure('website', 'First National Bank', 'Northern Lights Distributors, LLC', 'https://www3.financialtrans.com/tf/FANWeb?tx=Disclaim&cz=a05081718190514022018', 'yes');">Tributary&nbsp;Funds</a></li>
           <li><a href="javascript:siteDisclosure('website', 'First National Bank', 'Nebraska Educational Savings Plan Trust (NEST)', 'https://www.nest529direct.com/nedtpl/auth/loginFormAction.do?tplcb=%2Fnedtpl%2Facctmaint%2FacctList.do', 'yes');">NEST</a><li>                         </ul>
          </td>
-        </table>          
+        </table>
             </div>
-            <!-- background2 --> 
+            <!-- background2 -->
           </div>
         </li>
-       
 
-   <li class="category ResourceCenter"> <a href="https://www.firstnational.com/site/personal/resource-center/">Resource Center</a>          
-          <div class="submenu">     
+
+   <li class="category ResourceCenter"> <a href="https://www.firstnational.com/site/personal/resource-center/">Resource Center</a>
+          <div class="submenu">
             <div class="background2">
         <img src="./config/img/branded/mm-triangle.png" alt="" title="" class="triangle" /> <!-- drop-down indicator -->
                 <h3><a href="https://www.firstnational.com/site/personal/resource-center/smart-credit-management/index.fhtml">Smart&nbsp;Credit&nbsp;Management</a></h3>
@@ -355,22 +292,22 @@
                     <ul class="nav">
           <li><a href="https://www.firstnational.com/site/personal/resource-center/newsletters/first-focus/index.fhtml">First Focus</a></li>
                       <li><a href="https://www.firstnational.com/site/personal/resource-center/newsletters/estate-planning-updates.fhtml">Estate Planning Updates</a></li></ul>
-            
-                   
 
 
-       
+
+
+
             </div>
-            <!-- background2 --> 
+            <!-- background2 -->
           </div>
         </li>
       </ul>
     </div>
-    <!-- category --> 
+    <!-- category -->
   </div>
-  <!-- nav -->    
+  <!-- nav -->
 <div id="">
-    
+
   <div id="wrapper2">
 
     <div class="container">
@@ -384,12 +321,12 @@
             <li class="selected-nav-item"><a href="">Child Accounts</a></li>
             <li><a href="">AutoPayments</a></li>
             <li><a href="">Account Reports</a></li>
-          </ul> 
+          </ul>
 
         </div>
 
         <div id="content-pane">
-          
+
           <h1 id="accounts-title">
             Accounts
           </h1>
@@ -402,7 +339,7 @@
               <span class="account-bal-label">Balance:</span>
               <span class="account-balance">$19,355.01</span>
             </div>
-            
+
             <div class="account-detail-view">
               <div class="activity-container">
                 <span class="activity-label">View Activity in: </span>
@@ -426,7 +363,7 @@
               <span class="account-bal-label">Balance:</span>
               <span class="account-balance">$7,238.33</span>
             </div>
-            
+
             <div class="account-detail-view">
               <div class="activity-container">
                 <span class="activity-label">View Activity in: </span>
@@ -450,7 +387,7 @@
               <span class="account-bal-label">Balance:</span>
               <span class="account-balance">$59,004.70</span>
             </div>
-            
+
             <div class="account-detail-view">
               <div class="activity-container">
                 <span class="activity-label">View Activity in: </span>
@@ -467,17 +404,17 @@
           </div>
 
         </div>
-     
-      </div> <!-- section3 --> 
-    
-    </div> <!-- container --> 
-  
-  </div> <!-- wrapper2 --> 
+
+      </div> <!-- section3 -->
+
+    </div> <!-- container -->
+
+  </div> <!-- wrapper2 -->
 
 </div> <!-- wrapper -->
 
 <div id="wrapper3">
-  <!-- tip_pages/tip_home_page -->  
+  <!-- tip_pages/tip_home_page -->
 <!-- End footer -->
 
 
@@ -485,7 +422,7 @@
     <div class="footer-content">
 
       <ul class="links">
-        
+
 
         <li><a href="javascript:siteDisclosure('website', 'First National Bank', 'Facebook', 'http://www.facebook.com/FNBOmaha', 'yes');"><img src="./config/img/logo-facebook.png" alt="Facebook" title="Facebook" /></a></li>
 
@@ -515,20 +452,20 @@
 
       <div class="copyright">
         <p> Copyright &copy; <script language="javascript" type="text/javascript">FooterDate()</script> First National Bank of Omaha. All Rights Reserved. <br/>
-          1620 Dodge Street, 
-          
-          Omaha, 
-          Nebraska 
+          1620 Dodge Street,
+
+          Omaha,
+          Nebraska
           68197
           </p>
       </div>
-      <!-- copyright --> 
+      <!-- copyright -->
 
     </div>
-    <!-- footerContent --> 
-    
+    <!-- footerContent -->
+
   </div>
-  <!-- footer --> 
+  <!-- footer -->
 </div> <!-- wrapper3 -->
 
 
@@ -556,8 +493,8 @@
       /************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
       var s_code=scatalyst.t();if(s_code)document.write(s_code)
     //--></script>
-    <script language="javascript" src="./MarketingWeb/internet_tip/shared-content-library/config/js/s-code-function-calls.js?v01" type="text/javascript"></script> 
-  
+    <script language="javascript" src="./MarketingWeb/internet_tip/shared-content-library/config/js/s-code-function-calls.js?v01" type="text/javascript"></script>
+
 
 </body>
 </html>

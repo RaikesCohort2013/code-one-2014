@@ -3,7 +3,7 @@ define([
     'underscore',
     'backbone',
     'handlebars',
-    'hb!../templates/post-template.html'
+//    'hb!../templates/post-template.html'
 ], function($, _, Backbone, Handlebars, PostTemplate){
     var View = Backbone.View.extend({
         el: $('#wrapper > .content'),
