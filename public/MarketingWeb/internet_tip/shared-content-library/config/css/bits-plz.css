@@ -1,0 +1,123 @@
+div#wrapper div#wrapper2 div.container div#section3 div#main-nav {
+  width: 200px; 
+  float: left;
+}
+
+div#wrapper div#wrapper2 div.container div#section3 div#main-nav ul.side-nav-list {
+	-webkit-padding-start: 0px;
+}
+
+div#wrapper div#wrapper2 div.container div#section3 div#main-nav ul.side-nav-list li {
+	background-color: #0d723c;
+	list-style-type: none;
+	padding-left: 30px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-bottom: solid white 1px;
+}
+
+div#wrapper div#wrapper2 div.container div#section3 div#main-nav ul.side-nav-list li.selected-nav-item {
+	background-color: #4aaa42; 
+}
+
+div#wrapper div#wrapper2 div.container div#section3 div#main-nav ul.side-nav-list li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.0em;
+  font-weight: bold;
+  font-style: inherit;
+}
+
+div#wrapper div#wrapper2 div.container div#section3 div#main-nav ul.side-nav-list li a.hover {
+  font-weight: bold;
+}
+
+
+
+
+
+
+div#wrapper div#wrapper2 div.container div#section3 div#content-pane h1 {
+  font-size: 3.0em;
+  font-weight: bold;
+  font-style: inherit;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+  color: #555;
+}
+
+div#wrapper div#wrapper2 div.container div#section3 div#content-pane {
+  background-color: #eee;
+  width: 750px;
+  float: left;
+  margin-left: 10px;
+}
+
+div#wrapper div#wrapper2 div.container div#section3 div#content-pane div.account-view div.account-header {
+  background-color: #0d723c;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  margin-left: 7px;
+  margin-right: 7px;
+}
+
+div#wrapper div#wrapper2 div.container div#section3 div#content-pane div.account-view div.account-detail-view {
+  height: 200px;
+  margin-left: 7px;
+  margin-right: 7px;
+  margin-bottom: 25px;
+  background-color: white;
+}
+
+div#wrapper div#wrapper2 div.container div#section3 div#content-pane div.account-view div.account-header span {
+  background-color: #0d723c;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: white;
+  font-size: 1.3em;
+  font-style: inherit;
+}
+
+div#wrapper div#wrapper2 div.container div#section3 div#content-pane div.account-view div.account-header > .account-name, .account-no-label, .account-no, .acconut-bal-label {
+  float: left;
+}
+
+div#wrapper div#wrapper2 div.container div#section3 div#content-pane div.account-view div.account-header span.account-no-label {
+  padding-left: 80px;
+}
+
+div#wrapper div#wrapper2 div.container div#section3 div#content-pane div.account-view div.account-header span.account-bal-label {
+  padding-left: 80px;
+}
+
+div#wrapper div#wrapper2 div.container div#section3 div#content-pane div.account-view div.account-header span.account-no {
+  padding-left: 0px;
+}
+
+div#wrapper div#wrapper2 div.container div#section3 div#content-pane div.account-view div.account-header span.account-balance {
+  background-color: white;
+  color: black;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-weight: bold;
+}
+
+div#wrapper div#wrapper2 div.container div#section3 div#content-pane div.account-view div.account-detail-view span.activity-label {
+  color: #555;
+  font-size: 1.3em;
+  font-style: inherit;
+  padding-left: 40px;
+  padding-right: 30px;
+}
+
+div#wrapper div#wrapper2 div.container div#section3 div#content-pane div.account-view div.account-detail-view div.activity-container {
+	padding-top: 15px;
+}
+
+
+
+
+
+
