@@ -70,6 +70,90 @@ div#wrapper div#wrapper2 div.container div#section3 div
           font-style: inherit
         > .account-name
           float: left
+    div.past-budgets
+      div.budget-header
+        margin-top: 30px      
+    div.current-budget,
+    div.past-budgets
+      div.budget-header
+        background-color: #0d723c
+        padding-top: 10px
+        padding-bottom: 10px
+        color: white
+        margin-left: 7px
+        margin-right: 7px
+        span
+          background-color: #0d723c
+          padding-left: 0
+          padding-right: 10px
+          color: white
+          font-size: 1.3em
+          font-style: inherit
+        > .time
+          padding-left: 160px
+        > .active
+          padding-right: 0px
+        > .name
+          padding-left: 10px
+        div.frac
+          float: right
+      progress
+        background-color: white
+        margin-left: 7px
+        height: 7px
+        width: 736px
+        appearance: none
+        -webkit-appearance: none
+      progress::-webkit-progress-value
+        background: #33f
+      div.budget-item
+        margin-left: 15px
+        margin-right: 15px
+        div.category
+          padding-top: 15px
+          margin-bottom: 35px
+          span
+            float: left
+          span.name
+            font-size: 14pt
+            font-style: inherit
+            padding-right: 30px
+          a.alert
+            text-decoration: none
+            color: white
+            font-size: 12pt
+          span.alert
+            border: 1px solid black
+            border-radius: 4px
+            background-color: #0d723c
+            padding: 1px 8px 1px 8px
+          span.current
+            font-size: 14pt
+            font-style: inherit
+          span.total
+            font-size: 14pt
+            font-style: inherit
+            padding-left: 5px
+          div.frac
+            display: block
+            float: right
+        progress
+          margin-left: 0px
+          width: 720px
+          height: 7px
+          appearance: none
+          -webkit-appearance: none
+        progress::-webkit-progress-bar
+          background-color: #888
+          box-shadow: 0 3px 5px rgba(0,0,0,.25) inset
+        progress::-webkit-progress-value
+          background: #0b0
+        progress.danger::-webkit-progress-value
+          background: #b00
+        progress.caution::-webkit-progress-value
+          background: #bb0
+
+          
 
 .account-no-label, .account-no, .acconut-bal-label
   float: left
