@@ -1,4 +1,5 @@
-<div class="account-view-{{ account_number }}">
+{{#each accounts}}
+<div class="account-view">
   <div class="account-header">
     <a class="account-name" href="#account-{{ account_number }}-detail" onClick="$('#account-{{ account_number }}-detail').slideToggle();"><span>{{ name }}</span></a>
     <span class="account-no-label">Acct. No:</span>
@@ -19,8 +20,8 @@
         </select>
       </span>
     </div>
-
     <div id="graph-{{ account_number }}" class="graph">
     </div>
   </div>
 </div>
+{{/each}}
