@@ -1,4 +1,4 @@
-sub_prod_cd,account_number,tran_cd,tran_description,tran_detail_description,db_cr_cd,category,post_date,tran_amount,mcc,merchant_type,sic_code,presentation,
+sub_prod_cd,account_number,tran_cd,tran_description,tran_detail_description,db_cr_cd,category,post_date,amount,mcc,merchant_type,sic_code,presentation,
 Checking ,2,1118,INTEREST PAYMENT                       ,                                               ,C,Interest Income,5/12/2014,0.01,#N/A,#N/A,#N/A,
 Checking ,2,1037,LOC OVERPAYMENT CREDIT                 ,                                               ,C,Fee Reversal,6/9/2014,200,#N/A,#N/A,#N/A,
 Checking ,2,2007,OVERPAYMENT - DEBIT                    ,                                               ,D,Fee,6/9/2014,200,#N/A,#N/A,#N/A,

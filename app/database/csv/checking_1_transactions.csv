@@ -1,4 +1,4 @@
-sub_prod_cd,account_number,tran_cd,tran_description,tran_detail_description,db_cr_cd,category,post_date,tran_amount,mcc,merchant_type,sic_code,presentation
+sub_prod_cd,account_number,tran_cd,tran_description,tran_detail_description,db_cr_cd,category,post_date,amount,mcc,merchant_type,sic_code,presentation
 Checking ,1,5786,REVERSE CHECK IMAGE CHECK              ,                                               ,C,Fee Reversal,8/22/2014,11,,#N/A,#N/A,#N/A
 Checking ,1,5786,REVERSE CHECK IMAGE CHECK              ,                                               ,C,Fee Reversal,8/26/2014,11,,#N/A,#N/A,#N/A
 Checking ,1,2055,AUTO LOC PAYMENT MINIMUM BILLED        ,                                               ,C,Fee Reversal,7/2/2014,22.28,,#N/A,#N/A,#N/A

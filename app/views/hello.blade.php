@@ -8,10 +8,4 @@ $accounts = Account::all();
 
 <h1>{{ $account->name }}</h1>
 
-	@foreach($account->transactions() as $t)
-
-	<p>{{ $t->account_number }}</p>
-
-	@endforeach
-
 @endforeach
