@@ -21,7 +21,7 @@ class BudgetController extends BaseController
 	 */
 	public function create()
 	{
-		//
+
 	}
 
 
@@ -30,9 +30,16 @@ class BudgetController extends BaseController
 	 *
 	 * @return Response
 	 */
-	public function store()
+	public function store($budget)
 	{
-		//
+		$b = new Budget();
+		if($b->validate($budget))
+		{
+			Budget::create([
+				'tag_id'	=> $budget->tag_id,
+				'amount'	=> $budget->amount
+			]);
+		}
 	}
 
 
@@ -82,6 +89,5 @@ class BudgetController extends BaseController
 	{
 		//
 	}
-
 
 }
