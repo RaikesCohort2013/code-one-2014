@@ -8,9 +8,11 @@ class TransactionController extends BaseController
 	 *
 	 * @return Response
 	 */
-	public function index()
+	public function index($account_number)
 	{
-		//
+		$account = Account::where('account_number', $account_number)->firstOrFail();
+		$transactions = $account->transactions();
+		return $this->jsonResponse($transactions);
 	}
 
 	/**
@@ -19,9 +21,16 @@ class TransactionController extends BaseController
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function show($id)
+	public function show($account_number, $transaction_id)
 	{
 		//
+	}
+
+	private function jsonResponse($data)
+	{
+		$response = Response::make(json_encode($data));
+		$response->header('Content-Type', 'application/json');
+		return $response;
 	}
 
 }

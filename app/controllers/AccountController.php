@@ -10,7 +10,8 @@ class AccountController extends BaseController
 	 */
 	public function index()
 	{
-		//
+		$accounts = Account::all();
+		return $this->jsonResponse($accounts);
 	}
 
 
@@ -27,9 +28,17 @@ class AccountController extends BaseController
 		$balance = 0;
 		foreach($transactions as $t)
 		{
-			$balance += $t->tran_amount;
+			$balance += $t->amount;
 		}
-		return $balance;
+		$account->balance = $balance;
+		return $this->jsonResponse($account);
+	}
+
+	private function jsonResponse($data)
+	{
+		$response = Response::make(json_encode($data));
+		$response->header('Content-Type', 'application/json');
+		return $response;
 	}
 
 }
