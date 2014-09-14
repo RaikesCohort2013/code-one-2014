@@ -36,7 +36,6 @@
 <script src="./MarketingWeb/internet_tip/shared-content-library/config/js/jquery/jquery-ui-1.8.18.custom.min.js" type="text/javascript"></script>
 <script src="./MarketingWeb/internet_tip/shared-content-library/config/js/jquery/jquery.megamenu.js" type="text/javascript"></script>
 <script src="./MarketingWeb/internet_tip/shared-content-library/config/js/jquery/jquery.top_up.min.js?libs=" type="text/javascript"></script>
-
 <script type="text/javascript">
   jQuery(function(){
     var SelfLocation = window.location.href.split('?');
