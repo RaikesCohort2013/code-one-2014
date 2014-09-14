@@ -12,15 +12,16 @@ define([
 ], function($, _, Backbone, App, AccountsCollectionView, TransactionsCollectionView, BudgetView, InvestmentsView, ParentalControlsView, AutopayView){
         var AppRouter = Backbone.Router.extend({
             routes: {
-                'accounts' : 'renderAccounts',
-                'transactions': 'renderTransactions',
+                '' : 'renderAccounts',
+                'accounts': 'renderAccounts',
+                'accounts/*actions' : 'renderTransactions',
                 'budgets': 'renderBudgets',
                 'investment': 'renderInvestments',
                 'parental-control': 'renderParentalControls',
                 'autopay': 'renderAutoPay',
                 '*actions' : 'notFound',
             },
-            renderAccounts: function() {
+            renderAccounts: function(actions) {
                 var accountView = new AccountsCollectionView({invalid_types: ['cd','ira','mortgage','auto_loan']});
                 $('li.nav-item').removeClass('active');
                 $('#nav-accounts').addClass('active');
