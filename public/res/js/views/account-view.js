@@ -12,16 +12,22 @@ define([
             'change select.time': 'renderGraphs',
             'click .account-header': 'toggleDetails',
         },
+        has_graphs: false,
         model: AccountModel,
         initialize: function(options){
             _.bindAll(this, 'graphBar');
             _.bindAll(this, 'graphPie');
-            this.render();
+            if(options !== null) {
+                this.has_graphs = options.has_graphs === true;
+            }
         },
         render: function() {
             this.renderGraphs();
         },
         renderGraphs: function(){
+            if (this.has_graphs == false) {
+                return;
+            }
             this.$('.pie-graph, .bar-graph').html('<img src="/res/img/loading.gif"/>'); // unset
             var graphPie = this.graphPie;
             var graphBar = this.graphBar;

@@ -44,3 +44,10 @@ h1 {
 #section3 {
   overflow: hidden;
 }
+
+a {
+  color: $dark-green;
+}
+a:hover {
+  color: green;
+}

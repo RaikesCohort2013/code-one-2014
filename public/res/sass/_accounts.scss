@@ -36,13 +36,11 @@
 .account-view:last-child {
   border-bottom: none;
 }
-.activity-container {
-  padding: 10px 0;
-}
 .activity-label, .time {
   padding: 4px;
 }
 .account-detail-view{
+  padding: 10px 0;
   .chart-area {
     @include outer-container();
   }

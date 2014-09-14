@@ -6,7 +6,7 @@ define([
     'views/accounts-collection-view',
     'views/transactions-collection-view',
     'views/budget-view',
-    'views/investments-view'
+    'views/investments-view',
     'views/parental-controls-view',
 ], function($, _, Backbone, App, AccountsCollectionView, TransactionsCollectionView, BudgetView, InvestmentsView, ParentalControlsView){
         var AppRouter = Backbone.Router.extend({
@@ -39,9 +39,9 @@ define([
                 $('#nav-investment').addClass('active');
             },
             renderParentalControls: function() {
-                var parentalControlsView = new ParentalControlsView();
+                var parentalControlsView = new ParentalControlsView({invalid_types: ['cd','ira','mortgage','auto_loan']});
                 $('li.nav-item').removeClass('active');
-                $('#nav-budgets').addClass('active');
+                $('#nav-parental-control').addClass('active');
             },
             notFound: function(action) {
                 console.log(action, ': 404 not found');
