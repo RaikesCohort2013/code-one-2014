@@ -35,6 +35,7 @@ After the box is installed and homestead is configured, navigate to the director
 Now your vm is running on localhost on port 8000 (or whatever you set it to). Now run `vagrant ssh`. To remote into your folder. Once in the code-one directory, you will need to download composer and run a composer update.
 
 `curl -sS https://getcomposer.org/installer | php`
+
 `php composer.phar update`
 
 This will download the laravel framework and other php dependencies.
