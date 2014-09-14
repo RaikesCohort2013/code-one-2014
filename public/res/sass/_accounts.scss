@@ -1,11 +1,4 @@
-.account-header {
-  @include outer-container();
-  background-color: $dark-green;
-  color: white;
-  padding: 10px;
-  cursor: pointer;
-  @include nb-gradient();
-}
+
 .account-name {
   @include span-columns(5);
 }

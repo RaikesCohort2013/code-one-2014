@@ -5,45 +5,81 @@
 <h2>
 	Existing Payments
 </h2>
-
 <div class="content">
-	<div class="autopay-header">
-		<span class="name">College Loan Payment</span>
-		<span class="next">Next Scheduled Payment: October 1, 2014</span>
-	</div>
-
-	<div class="past-payment">
-        <span class="date">September 1, 2014</span>
-        <span class="dollar">$2,500.00</span>
+    <div class="autopay">
+        <h3 class="thick-header">
+            <span class="name">College Loan Payment</span>
+            <span class="amount">$2,500 Monthly</span>
+            <span class="next">Next Payment: $2,300 on 10/1/2014</span>
+            <span class="actions">
+                <span class="edit"><a title="Edit autopayment" href="#">Edit</a></span>
+                <span class="delete"><a title="Remove autopayment" href="#"><i class="fa fa-close"></i></a></span>
+            </span>
+        </h3>
+        <table class="table">
+            <tr>
+                <th>Payment Date</th>
+                <th>Amount</th>
+                <th>Balance</th>
+                <th>Expires</th>
+            </tr>
+            <tr class="past-payment">
+                <td class="date">September 1, 2014</td>
+                <td class="dollar">$2,500.00</td>
+                <td class="dollar">$2,300.00</td>
+                <td class="expires">Zero Balance</td>
+            </tr>
+            <tr class="past-payment">
+                <td class="date">August 1, 2014</td>
+                <td class="dollar">$2,500.00</td>
+                <td class="dollar">$4,800.00</td>
+                <td class="expires">Zero Balance</td>
+            </tr>
+            <tr class="past-payment">
+                <td class="date">July 1, 2014</td>
+                <td class="dollar">$2,500.00</td>
+                <td class="dollar">$7,300.00</td>
+                <td class="expires">Zero Balance</td>
+            </tr>
+        </table>
+        <p><a href="#" title="More transactions">View more transactions</a> - <a href="#" title="Budget">View budget</a></p>
     </div>
+	<div class="autopay">
+        <h3 class="thick-header">
+            <span class="name">Car Payment</span>
+            <span class="amount">$1,500 Monthly</span>
+            <span class="next">No More Scheduled Payments</span>
+            <span class="edit"><a title="Edit autopayment" href="#">Edit</a></span>
+            <span class="delete"><a title="Remove autopayment" href="#"><i class="fa fa-close"></i></a></span>
+        </h3>
 
-    <div class="past-payment">
-        <span class="date">August 1, 2014</span>
-        <span class="dollar">$2,500.00</span>
+        <table class="table">
+            <tr>
+                <th>Payment Date</th>
+                <th>Amount</th>
+                <th>Balance</th>
+                <th>Expires</th>
+            </tr>
+            <tr class="past-payment">
+                <td class="date">September 1, 2014</td>
+                <td class="dollar">$1,500.00</td>
+                <td class="dollar">$10,300.00</td>
+                <td class="expires">September 1, 2014</td>
+            </tr>
+            <tr class="past-payment">
+                <td class="date">August 1, 2014</td>
+                <td class="dollar">$1,500.00</td>
+                <td class="dollar">$11,800.00</td>
+                <td class="expires">September 1, 2014</td>
+            </tr>
+            <tr class="past-payment">
+                <td class="date">July 1, 2014</td>
+                <td class="dollar">$1,500.00</td>
+                <td class="dollar">$13,300.00</td>
+                <td class="expires">September 1, 2014</td>
+            </tr>
+        </table>
+        <p><a href="#" title="More transactions">View more transactions</a> - <a href="#" title="Budget">View budget</a></p>
     </div>
-
-    <div class="past-payment">
-        <span class="date">July 1, 2014</span>
-        <span class="dollar">$2,500.00</span>
-    </div>
-
-	<div class="autopay-header">
-		<span class="name">Car Payment</span>
-		<span class="next">No More Scheduled Payments</span>
-	</div>
-
-	<div class="past-payment">
-        <span class="date">September 1, 2014</span>
-        <span class="dollar">$1,650.00</span>
-    </div>
-
-    <div class="past-payment">
-        <span class="date">August 1, 2014</span>
-        <span class="dollar">$1,650.00</span>
-    </div>
-
-    <div class="past-payment">
-        <span class="date">July 1, 2014</span>
-        <span class="dollar">$1,650.00</span>
-    </div>
+    <p><a href="#">Add a new Autopayment</a></p>
 </div>
