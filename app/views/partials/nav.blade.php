@@ -5,12 +5,6 @@
             <ul class="sub-nav-list">
             </ul>
         </li>
-        <li class="nav-item" id="nav-transactions">
-            <a href="/transactions">Transactions</a>
-            <ul class="sub-nav-list">
-                <li class="nav-item"><a href="">Tag Transactions</a></li>
-            </ul>
-        </li>
         <li class="nav-item" id="nav-budgets">
             <a href="/budgets">Budgets</a>
             <ul class="sub-nav-list">
@@ -24,12 +18,12 @@
             </ul>
         </li>
         <li class="nav-item" id="nav-parental-control">
-            <a href="/parental-control">Alerts and Parental Control</a>
+            <a href="/parental-control">Account Alerts / Parental Control</a>
             <ul class="sub-nav-list">
             </ul>
         </li>
         <li class="nav-item" id="nav-autopay">
-            <a href="/autopay">Autopay</a>
+            <a href="/autopay">AutoPayments</a>
             <ul class="sub-nav-list">
                 <li class="nav-item"><a href="">Create/Edit AutoPayment</a></li>
             </ul>

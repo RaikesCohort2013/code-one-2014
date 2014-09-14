@@ -9,13 +9,22 @@ define([
     var TransactionsCollectionView = Backbone.View.extend({
         el: $('#content-pane'),
         collection: TransactionsCollection,
-        initialize: function() {
-            this.collection = new TransactionsCollection();
-            this.collection.add({id: 2});
-            this.render();
+        initialize: function(options) {
+            var self = this;
+            this.collection = new TransactionsCollection(options);
+            this.collection.fetch({
+                success: function(){
+                    self.render();
+                }
+            });
         },
         render: function() {
-            var html = Template(this.collection.toJSON());
+            var transactions = []; var i =0;
+            var collection = _.sortBy(this.collection.toJSON(), function(e){
+                console.log(e);
+                return 0 - (new Date(e.post_date)).getTime();
+            }, this);
+            var html = Template({transactions: collection});
             this.$el.html(html);
         }
     });

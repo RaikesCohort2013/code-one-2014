@@ -1,10 +1,5 @@
 <?php
 
-Route::get('/{action?}', function()
-{
-	return View::make('accounts');
-});
-
 Route::group(array('prefix' => 'api'), function()
 {
 	// custom routes
@@ -17,3 +12,8 @@ Route::group(array('prefix' => 'api'), function()
 	Route::resource('budgettransactions', 'BudgetTransactionController');
 
 });
+
+Route::get('{action?}', function()
+{
+    return View::make('accounts');
+})->where('action', '.+');
