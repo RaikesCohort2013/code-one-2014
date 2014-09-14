@@ -30,9 +30,7 @@ define([
             var $element = this.$('.bar-graph');
             var data = [];
             var j = 0;
-            console.log(raw);
             _.each(raw, function(s, i){
-                console.log(s, i, new Date(parseInt(i)));
                 data[j++] = { x: new Date(parseInt(i)).toDateString(), y: parseInt(s*100)/100.0, time: i};
             });
             if (data.length > 0) {
@@ -130,7 +128,6 @@ define([
             } else if (time === 'month') {
                 from = new Date(today.getFullYear(), today.getMonth(), 0, 0, 0, 0, 0);
                 this.fetchTransactions(from, to).done(function(result){
-                    console.log(result);
                     _.each(result.transactions.toArray(), function(t){
                         var t_date = new Date(t.get('post_date'));
                         var timekey = (new Date(t_date.getFullYear(), t_date.getMonth(), t_date.getDate(), 0, 0, 0, 0)).getTime();
@@ -140,7 +137,6 @@ define([
                 })
             } else if (time === 'year') {
                 from = new Date(today.getFullYear(), 0, 0, 0, 0, 0, 0, 0);
-                console.log(from,to);
                 this.fetchTransactions(from, to).done(function(result){
                     _.each(result.transactions.toArray(), function(t){
                         var t_date = new Date(t.get('post_date'));
@@ -163,7 +159,6 @@ define([
         },
         fetchTransactions: function(from, to) {
             var def = $.Deferred();
-            console.log('getting transactions', from, to);
             var transactions = new Transactions({account_number: this.model.get('account_number'), fromTime: from.getTime()/1000, toTime: to.getTime()/1000});
             transactions.fetch({
                 success: function(){
