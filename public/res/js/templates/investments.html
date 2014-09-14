@@ -27,47 +27,24 @@
       });
         </script>
 
-        <div class="graph pie-graph investment-graph" id="graph-2" ></div>
+        <div class="graph pie-graph" id="graph-2" style="width:60%;float:left;"></div>
 
         <script>
-        Morris.Donut({
+        Morris.Line({
           element: 'graph-2',
           data: [
-          {label: "Download Sales", value: 12},
-          {label: "In-Store Sales", value: 30},
-          {label: "Mail-Order Sales", value: 20}
+          { y: '2008', a: 500, b: 9000, c: 1000 },
+          { y: '2009', a: 1500,  b: 12000, c: 2500 },
+          { y: '2010', a: 2000,  b: 16000, c: 3475 },
+          { y: '2011', a: 3000,  b: 21000, c: 4365},
+          { y: '2012', a: 4500,  b: 24000, c: 5500},
+          { y: '2013', a: 5750,  b: 27000, c: 7900},
+          { y: '2014', a: 7000, b: 30000, c: 9000}
           ],
-          formatter: function (y, data) { return '$' + y } ,
-          backgroundColor: '#ccc',
-          labelColor: '#000',
-          colors: [
-          '#0D723c',
-          '#3D925c',
-          '#6DA27c',
-          '#9DC29c'
-          ],
-      });
-        </script>
-
-        <div class="graph pie-graph investment-graph" id="graph-3" ></div>
-
-        <script>
-        Morris.Donut({
-          element: 'graph-3',
-          data: [
-          {label: "Download Sales", value: 12},
-          {label: "In-Store Sales", value: 30},
-          {label: "Mail-Order Sales", value: 20}
-          ],
-          formatter: function (y, data) { return '$' + y },
-          backgroundColor: '#ccc',
-          labelColor: '#000',
-          colors: [
-          '#0D723c',
-          '#3D925c',
-          '#6DA27c',
-          '#9DC29c'
-          ],
+          xkey: 'y',
+          ykeys: ['a', 'b', 'c'],
+          yLabelFormat: function (y, data) { return '$' + y },
+          labels: ['Mutual Fund', 'IRA', 'CD']
       });
         </script>
 
