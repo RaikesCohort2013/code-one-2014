@@ -168,7 +168,6 @@ define([
             return def;
         },
         toggleDetails: function() {
-            console.log('toggle');
             this.renderGraphs();
             this.$('.account-detail-view').slideToggle();
         }
