@@ -1,0 +1,31 @@
+{{#each types}}
+<div class="type">
+    <h3>{{ type }}</h3>
+    {{#each accounts}}
+    <div id="account-{{ account_number }}" class="account-view">
+        <div id="account-{{ account_number }}-header" class="account-header">
+            <h4 class="account-name" href="#account-{{ account_number }}-detail"><span>{{ name }}</span></h4>
+            <span class="account-no-label">Acct. No:</span>
+            <span class="account-no">{{ account_number }}</span>
+            <span class="account-bal-label">Balance:</span>
+            <span class="account-balance">${{ balance }}</span>
+        </div>
+        <div class="account-detail-view" id="account-{{ account_number }}-detail">
+            <div class="activity-container">
+                <span class="activity-label">View Activity in: </span>
+          <span class="custom-dropdown custom-dropdown--white">
+            <select class="time" name="">
+                <option value="week">This Week</option>
+                <option selected="selected" value="month">This Month</option>
+                <option value="year">This Year</option>
+                <option value="all-time">All Time</option>
+            </select>
+          </span>
+            </div>
+                <div class="graph pie-graph"><img src="/res/img/loading.gif"/></div>
+                <div class="graph bar-graph"><img src="/res/img/loading.gif"/></div>
+        </div>
+    </div>
+    {{/each}}
+</div>
+{{/each}}

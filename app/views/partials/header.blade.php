@@ -34,6 +34,18 @@
 <!--[if IE 9]>
   <![endif]-->
 
+<script src="./MarketingWeb/internet_tip/shared-content-library/config/js/jquery/jquery-1.7.1.min.js" type="text/javascript"></script>
+<script src="./MarketingWeb/internet_tip/shared-content-library/config/js/jquery/jquery-ui-1.8.18.custom.min.js" type="text/javascript"></script>
+<script src="./MarketingWeb/internet_tip/shared-content-library/config/js/jquery/jquery.megamenu.js" type="text/javascript"></script>
+<script src="./MarketingWeb/internet_tip/shared-content-library/config/js/jquery/jquery.top_up.min.js?libs=" type="text/javascript"></script>
+
+<script type="text/javascript">
+  jQuery(function(){
+    var SelfLocation = window.location.href.split('?');
+        jQuery(".megamenu").megamenu();
+  });
+</script>
+
 <style type="text/css">
   .morris-hover {
     position:absolute;
@@ -59,12 +71,30 @@
   }
 </style>
 
+<script src="./MarketingWeb/internet_tip/shared-content-library/config/js/global.onload.js" type="text/javascript"></script>
+<script src="./MarketingWeb/internet_tip/shared-content-library/config/js/functions.js" type="text/javascript"></script>
 <script src="res/js/lib/require.js" data-main="res/js/main" type="application/javascript"></script>
 
 <!-- awkward-showcase -->
 <link rel="stylesheet" href="./MarketingWeb/internet_tip/shared-content-library/config/css/jquery.awkward-showcase-homepage.css" />
+<script type="text/javascript" src="./MarketingWeb/internet_tip/shared-content-library/config/js/jquery/jquery.aw-showcase.min.js"></script>
 
+<!--[if LTE IE 8]>
+<script type="text/javascript" src="./MarketingWeb/internet_tip/shared-content-library/config/js/jquery/jquery.aw-showcase-init-homepage-ie8.js"></script>
+<![endif]-->
+
+<!--[if gte IE 9]><!-->
+<script type="text/javascript" src="./MarketingWeb/internet_tip/shared-content-library/config/js/jquery/jquery.aw-showcase-init-homepage.js"></script>
+<!--<![endif]-->
+
+
+
+<!-- Remember Me -->
+<script type="text/javascript" src="./MarketingWeb/internet_tip/shared-content-library/config/js/jquery/remember-me/jquery.cookie.js" ></script>
+<script type="text/javascript" src="./MarketingWeb/internet_tip/shared-content-library/config/js/jquery/remember-me/jquery.remember-me.js" ></script>
 <link href="./MarketingWeb/internet_tip/shared-content-library/config/css/remember-me.css" rel="stylesheet" type="text/css" media="screen" />
+
+<script type="text/javascript" src="./MarketingWeb/internet_tip/shared-content-library/config/js/jquery/return-to-accounts.js"></script>
 
 <!-- local css -->
 <link media="screen, print" type="text/css" rel="stylesheet" href="./config/css/wrapper-homepage-sitebrand.css"/>
@@ -268,12 +298,11 @@
                 <td class="col2" style="border-left:1px solid #ccc; width:200px; padding:0 10px;">
           <h3>Account Access</h3>
                   <ul class="nav">
-                      <li><a href="https://clientpoint.fisglobal.com/tdcb/main/UserLogon?bankNumber=ng&subProduct=fnbtrust" target="_blank">Client&nbsp;Point</a></li>
-                      <li><a href="#">Investments&nbsp;&amp&nbsp;Planning</a><li>
-                      <li><a href="#">Retirement Gold</a></li>
-                      <li><a href="#">Tributary&nbsp;Funds</a></li>
-                      <li><a href="#">NEST</a><li>
-                  </ul>
+          <li><a href="https://clientpoint.fisglobal.com/tdcb/main/UserLogon?bankNumber=ng&subProduct=fnbtrust" target="_blank">Client&nbsp;Point</a></li>
+          <li><a href="javascript:siteDisclosure('website', 'First National Bank', 'National Financial Services LLC', 'https://www.mystreetscape.com/my/investmentsandplanning', 'yes');">Investments&nbsp;&amp&nbsp;Planning</a><li>
+          <li><a href="javascript:siteDisclosure('website', 'First National Bank', 'Ascensus, Inc.', 'https://www.retirementgold.com/fnbo/', 'yes');">Retirement Gold</a></li>
+          <li><a href="javascript:siteDisclosure('website', 'First National Bank', 'Northern Lights Distributors, LLC', 'https://www3.financialtrans.com/tf/FANWeb?tx=Disclaim&cz=a05081718190514022018', 'yes');">Tributary&nbsp;Funds</a></li>
+          <li><a href="javascript:siteDisclosure('website', 'First National Bank', 'Nebraska Educational Savings Plan Trust (NEST)', 'https://www.nest529direct.com/nedtpl/auth/loginFormAction.do?tplcb=%2Fnedtpl%2Facctmaint%2FacctList.do', 'yes');">NEST</a><li>                         </ul>
          </td>
         </table>
             </div>
