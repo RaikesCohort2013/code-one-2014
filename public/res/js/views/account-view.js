@@ -177,7 +177,8 @@ define([
             });
             return def;
         },
-        toggleDetails: function() {
+        toggleDetails: function(e) {
+            e.preventDefault();
             this.renderGraphs();
             this.$('.account-detail-view').slideToggle();
             var new_class = this.$('.account-dropdown > i').attr('data-toggle');
