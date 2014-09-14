@@ -10,7 +10,7 @@ define([
                 '*whatever' : 'renderAccounts'
             },
             renderAccounts: function() {
-                var accountView = new AccountsCollectionView();
+                var accountView = new AccountsCollectionView({invalid_types: ['cd','ira','mortgage','auto_loan']});
             },
             notFound: function(action) {
                 console.log(action, ': 404 not found');

@@ -35,46 +35,21 @@ div#wrapper div#wrapper2 div.container div#section3 div
     width: 750px
     float: left
     margin-left: 10px
-    div.account-view div
-      &.account-header
-        background-color: #0d723c
-        padding-top: 10px
-        padding-bottom: 10px
-        color: white
-        margin-left: 7px
-        margin-right: 7px
-      &.account-detail-view
-        margin-left: 7px
-        margin-right: 7px
-        margin-bottom: 25px
-        background-color: white
-      &.account-header
-        span
-          background-color: #0d723c
-          padding-left: 10px
-          padding-right: 10px
-          color: white
-          font-size: 1.3em
-          font-style: inherit
-        > .account-name
-          float: left
-
-.account-no-label, .account-no, .acconut-bal-label
-  float: left
 
 div#wrapper div#wrapper2 div.container div#section3 div#content-pane div.account-view div
-  &.account-header span
-    &.account-no-label, &.account-bal-label
-      padding-left: 80px
-    &.account-no
-      padding-left: 0px
-    &.account-balance
-      background-color: white
-      color: black
-      padding-top: 5px
-      padding-bottom: 5px
-      font-weight: bold
+  &.account-header
+    background-color: #0d723c
+    padding-top: 10px
+    padding-bottom: 10px
+    color: white
+    margin-left: 7px
+    margin-right: 7px
   &.account-detail-view
+    margin-left: 7px
+    margin-right: 7px
+    margin-bottom: 25px
+    background-color: white
+    display: none
     span.activity-label
       color: #555
       font-size: 1.4em
@@ -83,3 +58,23 @@ div#wrapper div#wrapper2 div.container div#section3 div#content-pane div.account
       padding-right: 10px
     div.activity-container
       padding-top: 15px
+  &.account-header
+    span
+      background-color: #0d723c
+      padding-left: 10px
+      padding-right: 10px
+      color: white
+      font-size: 1.3em
+      font-style: inherit
+      &.account-no-label, &.account-bal-label
+        padding-left: 80px
+      &.account-no
+        padding-left: 0px
+      &.account-balance
+        background-color: white
+        color: black
+        padding-top: 5px
+        padding-bottom: 5px
+        font-weight: bold
+    > .account-name
+      float: left
