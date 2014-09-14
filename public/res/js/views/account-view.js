@@ -4,10 +4,9 @@ define([
     'backbone',
     'handlebars',
     'morris',
-    'hb!../templates/account-detail.html',
     'models/account-model',
     'collections/transactions-collection'
-], function($, _, Backbone, Handlebars, Morris, Template, AccountModel, Transactions){
+], function($, _, Backbone, Handlebars, Morris, AccountModel, Transactions){
     var AccountsView = Backbone.View.extend({
         events: {
             'change select.time': 'renderGraphs',
@@ -17,10 +16,6 @@ define([
         initialize: function(options){
             _.bindAll(this, 'graphBar');
             _.bindAll(this, 'graphPie');
-        },
-        render: function(){
-            this.html = Template(this.model.toJSON());
-            this.$el.html(this.html);
         },
         renderGraphs: function(){
             this.$('.pie-graph, .bar-graph').html('<img src="/res/img/loading.gif"/>'); // unset
