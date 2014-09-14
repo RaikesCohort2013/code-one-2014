@@ -6,7 +6,8 @@ define([
     'views/accounts-collection-view',
     'views/transactions-collection-view',
     'views/budget-view',
-], function($, _, Backbone, App, AccountsCollectionView, TransactionsCollectionView, BudgetView){
+    'views/investments-view'
+], function($, _, Backbone, App, AccountsCollectionView, TransactionsCollectionView, BudgetView, InvestmentsView){
         var AppRouter = Backbone.Router.extend({
             routes: {
                 'accounts' : 'renderAccounts',

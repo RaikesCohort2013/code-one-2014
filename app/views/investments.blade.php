@@ -10,50 +10,7 @@
 
         <div id="main-nav">
 
-          <ul class="side-nav-list">
-            <a href=""><li>Accounts</li></a>
-            <ol class="sub-nav-list">
-            	<a href=""><li>Item1</li></a>
-            	<a href=""><li>Item2</li></a>
-            	<a href=""><li>Item3</li></a>
-            </ol>
-            <a href=""><li>Transactions</li></a>
-            <ol class="sub-nav-list">
-            	<a href=""><li>Item1</li></a>
-            	<a href=""><li>Item2</li></a>
-            	<a href=""><li>Item3</li></a>
-            </ol>
-            <a href=""><li>Budgets</li></a>
-            <ol class="sub-nav-list">
-            	<a href=""><li>New Budget</li></a>
-            	<a href=""><li>Edit Budget</li></a>
-            	<a href=""><li>Analyze Budget</li></a>
-            </ol>
-            <a href=""><li class="selected-nav-item">Investments</li></a>
-            <ol class="sub-nav-list selected-nav-item">
-            	<a href=""><li>Stocks</li></a>
-            	<a href=""><li>Cash</li></a>
-            	<a href=""><li>Bonds</li></a>
-            </ol>
-            <a href=""><li>Parental Control</li></a>
-            <ol class="sub-nav-list">
-            	<a href=""><li>Item1</li></a>
-            	<a href=""><li>Item2</li></a>
-            	<a href=""><li>Item3</li></a>
-            </ol>
-            <a href=""><li>Analytics</li></a>
-            <ol class="sub-nav-list">
-            	<a href=""><li>Item1</li></a>
-            	<a href=""><li>Item2</li></a>
-            	<a href=""><li>Item3</li></a>
-            </ol>
-            <a href=""><li>Autopay</li></a>
-            <ol class="sub-nav-list">
-            	<a href=""><li>Item1</li></a>
-            	<a href=""><li>Item2</li></a>
-            	<a href=""><li>Item3</li></a>
-            </ol>
-          </ul>
+          @include('partials.nav')
 
         </div>
 
@@ -64,8 +21,38 @@
 
           	<div class="investment-detail">
                 <h3>Allocation</h3>
+
+                <div id="graph">
+                    <script type="text/javascript">
+                        Morris.Donut({
+                      element: 'graph',
+                      data: [
+                        {value: 70, label: 'foo'},
+                        {value: 15, label: 'bar'},
+                        {value: 10, label: 'baz'},
+                        {value: 5, label: 'A really really long label'}
+                      ],
+                      formatter: function (x) { return x + "%"}
+                    });
+                    </script>
+                </div>
                 
                 <h3>Diversity</h3>
+
+                <div id="graph2">
+                    <script type="text/javascript">
+                        Morris.Donut({
+                      element: 'graph2',
+                      data: [
+                        {value: 70, label: 'foo'},
+                        {value: 15, label: 'bar'},
+                        {value: 10, label: 'baz'},
+                        {value: 5, label: 'A really really long label'}
+                      ],
+                      formatter: function (x) { return x + "%"}
+                    });
+                    </script>
+                </div>
                 
                 <h3>Portfolio</h3>
                 
@@ -73,12 +60,17 @@
                     <thead>
                         <th>Investment Name</th>
                         <th>Invesment Type</th>
-                        <th class="amount selected">Amount</th>
+                        <th class="selected">Amount</th>
                     </thead>
                     <tr>
                         <td>Jon's Mutual Fund</td>
                         <td>Mutual Fund Investment</td>
-                        <td>12,849.80</td>
+                        <td class="amount">12,849.80</td>
+                    </tr>
+                    <tr>
+                        <td>Jake's College Account</td>
+                        <td>UGMA Account</td>
+                        <td class="amount">349.07</td>
                     </tr>
                 </table>
             </div>
