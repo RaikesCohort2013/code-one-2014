@@ -46,10 +46,24 @@ h1 {
 #section3 {
   overflow: hidden;
 }
-
+.thick-header {
+  @include outer-container();
+  background-color: $dark-green;
+  color: white;
+  padding: 10px;
+  @include nb-gradient();
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  a:hover {
+    color: white;
+  }
+}
 a {
   color: $dark-green;
 }
 a:hover {
+  text-decoration: underline;
   color: green;
 }

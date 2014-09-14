@@ -45,6 +45,7 @@ define([
             this.$('.time').selectize({sortField: 'text'});
             console.log(items);
             $('#nav-accounts .sub-nav-list').html(NavTemplate({items: items}));
+            $('.account-dropdown').first().click();
         },
     });
     return AccountsCollectionView;

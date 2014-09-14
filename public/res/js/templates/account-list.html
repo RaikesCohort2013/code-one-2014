@@ -4,11 +4,11 @@
     <h2 class="type-header">{{ type }} Accounts</h2>
     {{#each accounts}}
     <div id="account-{{ account_number }}" class="account-view">
-        <h3 class="account-header" id="account-{{ account_number }}-header">
+        <h3 class="thick-header" id="account-{{ account_number }}-header">
             <span class="account-name">{{ name }}</span>
             <span class="account-no">Acct. No: {{ account_number }}</span>
             <span class="account-bal">Balance: ${{ balance }}</span>
-            <span class="account-dropdown"><i data-toggle="fa fa-chevron-up" class="fa fa-chevron-down"></i></span>
+            <a class="account-dropdown" href="#"><i data-toggle="fa fa-chevron-up" class="fa fa-chevron-down"></i></a>
         </h3>
         <div class="account-detail-view" id="account-{{ account_number }}-detail">
             <p class="activity-container">

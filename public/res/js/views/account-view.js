@@ -10,7 +10,7 @@ define([
     var AccountsView = Backbone.View.extend({
         events: {
             'change select.time': 'renderGraphs',
-            'click .account-header': 'toggleDetails',
+            'click .account-dropdown': 'toggleDetails',
         },
         has_graphs: false,
         model: AccountModel,

@@ -2,48 +2,46 @@ h2 {
 	margin-top: 10px;
 	margin-left: 7px;
 }
-
-div.content div.autopay-header {
-
-  background-color: #0d723c;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  color: white;
-  margin-left: 7px;
-  margin-right: 7px;
-  margin-top: 15px;
-  margin-bottom: 10px;
-  @include span-columns(12);
-
-  span {
-    background-color: #0d723c;
-    padding-left: 10px;
-    padding-right: 10px;
-    color: white;
-    font-size: 1.3em;
-    font-style: inherit;
+.content {
+  padding: 4px 0;
+}
+.autopay {
+  .name {
+    @include span-columns(3);
   }
-
-  span.name {
-    padding-left: 10px;
+  .amount {
+    @include span-columns(3);
+    text-align: center;
   }
-
-  span.next {
-  	float: right;
-  	padding-right: 20px;
+  .next {
+    @include span-columns(5);
+    text-align: center;
+  }
+  .actions{
+    @include span-columns(1);
+    text-align: right;
+  }
+  .table {
+    margin: 0;
+    width: 100%;
+    border: 0;
+    font-size: small;
+    th {
+      font-weight: normal;
+      border: 0;
+      text-align: left;
+      font-size: small;
+    }
+    margin-bottom: 10px;
   }
 }
-
-div.content div.past-payment {
-	margin-top: 10px;
-	span {
+.past-payment {
+	td {
         padding-left: 10px;
         padding-right: 10px;
-        font-size: 1.3em;
-        font-style: inherit;
   	}
 
-  	span.dollar {
-  		float: right;
+  	.dollar {
+  		text-align: right;
   	}
 }
