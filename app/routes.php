@@ -1,9 +1,9 @@
 <?php
 
-Route::get('/', function()
+Route::get('/{action?}', function()
 {
-	return View::make('create_budget');
-});
+	return View::make('accounts');
+})->where('action', '[A-Za-z]+');
 
 Route::group(array('prefix' => 'api'), function()
 {

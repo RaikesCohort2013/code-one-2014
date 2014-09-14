@@ -10,7 +10,7 @@ define([
     'views/account-view'
 ], function($, _, Backbone, Handlebars, Morris, AccountsCollection, Template, AccountModel, AccountView){
     var AccountsCollectionView = Backbone.View.extend({
-        el: $('#main-accounts'),
+        el: $('#content-pane'),
         views: [],
         invalid_types: [],
         initialize: function(options){
