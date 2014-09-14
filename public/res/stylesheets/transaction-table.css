@@ -1,5 +1,5 @@
 /* line 1, ../sass/transaction-table.sass */
-table#transaction-list {
+table.transaction-list {
   border: 1px solid black;
   width: 730px;
   margin-left: 10px;
@@ -9,7 +9,7 @@ table#transaction-list {
 }
 
 /* line 9, ../sass/transaction-table.sass */
-table#transaction-list th, td {
+table.transaction-list th, td {
   border: 1px solid black;
   background-color: white;
   font-style: inherit;
@@ -17,7 +17,7 @@ table#transaction-list th, td {
 }
 
 /* line 15, ../sass/transaction-table.sass */
-table#transaction-list th {
+table.transaction-list th {
   color: white;
   background-color: #0d723c;
   text-align: center;
@@ -26,22 +26,22 @@ table#transaction-list th {
 }
 
 /* line 22, ../sass/transaction-table.sass */
-table#transaction-list td.amount {
+table.transaction-list td.amount {
   text-align: right;
 }
 
 /* line 25, ../sass/transaction-table.sass */
-table#transaction-list th.selected {
+table.transaction-list th.selected {
   background-color: #005012;
 }
 
 /* line 28, ../sass/transaction-table.sass */
-table#transaction-list th a {
+table.transaction-list th a {
   color: white;
   text-decoration: none;
 }
 
 /* line 32, ../sass/transaction-table.sass */
-table#transaction-list td {
+table.transaction-list td {
   contenteditable: true;
 }

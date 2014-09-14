@@ -11,10 +11,48 @@
         <div id="main-nav">
 
           <ul class="side-nav-list">
-            <a href=""><li>Transactions</li></a>
-            <a href=""><li class="selected-nav-item">Tag By Person</li></a>
-            <a href=""><li>Tag by Category</li></a>
-            <a href=""><li>Filter Transactions</li></a>
+            <a href=""><li>Accounts</li></a>
+            <ol class="sub-nav-list">
+              <a href=""><li>Item1</li></a>
+              <a href=""><li>Item2</li></a>
+              <a href=""><li>Item3</li></a>
+            </ol>
+            <a href="" class="selected-nav-item"><li>Transactions</li></a>
+            <ol class="sub-nav-list selected-nav-item">
+              <a href=""><li>Item1</li></a>
+              <a href=""><li>Item2</li></a>
+              <a href=""><li>Item3</li></a>
+            </ol>
+            <a href=""><li>Budgets</li></a>
+            <ol class="sub-nav-list">
+              <a href=""><li>New Budget</li></a>
+              <a href=""><li>Edit Budget</li></a>
+              <a href=""><li>Analyze Budget</li></a>
+            </ol>
+            <a href=""><li>Investments</li></a>
+            <ol class="sub-nav-list">
+              <a href=""><li>Stocks</li></a>
+              <a href=""><li>Cash</li></a>
+              <a href=""><li>Bonds</li></a>
+            </ol>
+            <a href=""><li>Parental Control</li></a>
+            <ol class="sub-nav-list">
+              <a href=""><li>Item1</li></a>
+              <a href=""><li>Item2</li></a>
+              <a href=""><li>Item3</li></a>
+            </ol>
+            <a href=""><li>Analytics</li></a>
+            <ol class="sub-nav-list">
+              <a href=""><li>Item1</li></a>
+              <a href=""><li>Item2</li></a>
+              <a href=""><li>Item3</li></a>
+            </ol>
+            <a href=""><li>Autopay</li></a>
+            <ol class="sub-nav-list">
+              <a href=""><li>Item1</li></a>
+              <a href=""><li>Item2</li></a>
+              <a href=""><li>Item3</li></a>
+            </ol>
           </ul>
 
         </div>
