@@ -26,8 +26,8 @@ define([
                 $('li.nav-item').removeClass('active');
                 $('#nav-accounts').addClass('active');
             },
-            renderTransactions: function() {
-                var transactionsView = new TransactionsCollectionView();
+            renderTransactions: function(action) {
+                var transactionsView = new TransactionsCollectionView({account_number: action});
                 $('li.nav-item').removeClass('active');
                 $('#nav-transactions').addClass('active');
             },

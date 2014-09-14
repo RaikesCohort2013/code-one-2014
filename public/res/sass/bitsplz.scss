@@ -67,3 +67,19 @@ a:hover {
   text-decoration: underline;
   color: green;
 }
+table.table {
+  margin: 10px 0;
+  width: 100%;
+  font-size: small;
+  th {
+    font-weight: normal;
+    text-align: left;
+    font-size: small;
+  }
+  .dollar {
+    text-align: right;
+  }
+}
+table.table.transactions-table {
+  td, th {font-size: 8pt;}
+}

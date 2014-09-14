@@ -12,11 +12,19 @@ define([
         initialize: function(options) {
             var self = this;
             this.collection = new TransactionsCollection(options);
-            this.render();
+            this.collection.fetch({
+                success: function(){
+                    self.render();
+                }
+            });
         },
         render: function() {
-            var keys = _.keys(this.collection.at(0));
-            var html = Template({keys: keys, transactions: this.collection.toJSON()});
+            var transactions = []; var i =0;
+            var collection = _.sortBy(this.collection.toJSON(), function(e){
+                console.log(e);
+                return 0 - (new Date(e.post_date)).getTime();
+            }, this);
+            var html = Template({transactions: collection});
             this.$el.html(html);
         }
     });

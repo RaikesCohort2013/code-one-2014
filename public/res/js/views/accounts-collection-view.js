@@ -27,7 +27,6 @@ define([
                 this.invalid_types = options.invalid_types;
         },
         render: function(){
-            console.log('wat')
             var displayModel = this.collection.by_type(this.invalid_types);
             console.log(displayModel, {types: displayModel});
             this.html = Template({types: displayModel});

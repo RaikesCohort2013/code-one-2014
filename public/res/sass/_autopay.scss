@@ -21,27 +21,17 @@ h2 {
     @include span-columns(1);
     text-align: right;
   }
-  .table {
-    margin: 0;
-    width: 100%;
+
+  table.table {
     border: 0;
-    font-size: small;
     th {
-      font-weight: normal;
       border: 0;
-      text-align: left;
-      font-size: small;
     }
-    margin-bottom: 10px;
   }
 }
 .past-payment {
 	td {
         padding-left: 10px;
         padding-right: 10px;
-  	}
-
-  	.dollar {
-  		text-align: right;
   	}
 }
