@@ -7,13 +7,15 @@ define([
     'views/transactions-collection-view',
     'views/budget-view',
     'views/investments-view'
-], function($, _, Backbone, App, AccountsCollectionView, TransactionsCollectionView, BudgetView, InvestmentsView){
+    'views/parental-controls-view',
+], function($, _, Backbone, App, AccountsCollectionView, TransactionsCollectionView, BudgetView, InvestmentsView, ParentalControlsView){
         var AppRouter = Backbone.Router.extend({
             routes: {
                 'accounts' : 'renderAccounts',
                 'transactions': 'renderTransactions',
                 'budgets': 'renderBudgets',
                 'investment': 'renderInvestments',
+                'parental-control': 'renderParentalControls',
                 '*actions' : 'notFound',
             },
             renderAccounts: function() {
@@ -35,6 +37,11 @@ define([
                 var investmentView = new InvestmentsView();
                 $('li.nav-item').removeClass('active');
                 $('#nav-investment').addClass('active');
+            },
+            renderParentalControls: function() {
+                var parentalControlsView = new ParentalControlsView();
+                $('li.nav-item').removeClass('active');
+                $('#nav-budgets').addClass('active');
             },
             notFound: function(action) {
                 console.log(action, ': 404 not found');
