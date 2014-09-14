@@ -10,7 +10,8 @@ class BudgetTransactionController extends BaseController {
 	 */
 	public function index()
 	{
-		//
+		$budgetTransactions = BudgetTransaction::all();
+		return $this->jsonResponse($budgetTransactions);
 	}
 
 	/**
@@ -21,7 +22,7 @@ class BudgetTransactionController extends BaseController {
 	 */
 	public function create()
 	{
-		//
+		// do dis in backbone
 	}
 
 	/**
@@ -30,9 +31,13 @@ class BudgetTransactionController extends BaseController {
 	 *
 	 * @return Response
 	 */
-	public function store()
+	public function store($budget_transaction)
 	{
-		//
+		BudgetTransaction::create([
+			'transaction_id'	=> $budget_transaction->transaction_id,
+			'amount'			=> $budget_transaction->amount,
+			'tag_id'			=> $budget_transaction->tag_id
+		]);
 	}
 
 	/**
@@ -44,7 +49,8 @@ class BudgetTransactionController extends BaseController {
 	 */
 	public function show($id)
 	{
-		//
+		$budgetTransaction = BudgetTransaction::find(id);
+		return $this->jsonResponse($budgetTransaction);
 	}
 
 	/**
@@ -81,6 +87,13 @@ class BudgetTransactionController extends BaseController {
 	public function destroy($id)
 	{
 		//
+	}
+
+	private function jsonResponse($data)
+	{
+		$response = Response::make(json_encode($data));
+		$response->header('Content-Type', 'application/json');
+		return $response;
 	}
 
 }
