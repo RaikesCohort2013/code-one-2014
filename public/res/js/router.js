@@ -7,16 +7,14 @@ define([
     'views/transactions-collection-view',
     'views/budget-view',
     'views/investments-view',
-    'views/parental-controls-view',
     'views/autopay-view',
-], function($, _, Backbone, App, AccountsCollectionView, TransactionsCollectionView, BudgetView, InvestmentsView, ParentalControlsView, AutopayView){
+], function($, _, Backbone, App, AccountsCollectionView, TransactionsCollectionView, BudgetView, InvestmentsView, AutopayView){
         var AppRouter = Backbone.Router.extend({
             routes: {
                 'accounts' : 'renderAccounts',
                 'transactions': 'renderTransactions',
                 'budgets': 'renderBudgets',
                 'investment': 'renderInvestments',
-                'parental-control': 'renderParentalControls',
                 'autopay': 'renderAutoPay',
                 '*actions' : 'notFound',
             },
@@ -40,16 +38,11 @@ define([
                 $('li.nav-item').removeClass('active');
                 $('#nav-investment').addClass('active');
             },
-            renderParentalControls: function() {
-                var parentalControlsView = new ParentalControlsView({invalid_types: ['cd','ira','mortgage','auto_loan']});
-                $('li.nav-item').removeClass('active');
-                $('#nav-parental-control').addClass('active');
-            },
             renderAutoPay: function() {
                 var autopayView = new AutopayView();
                 $('li.nav-item').removeClass('active');
                 $('#nav-autopay').addClass('active');
-            },
+            },   
             notFound: function(action) {
                 console.log(action, ': 404 not found');
                 //notFoundView.render();
