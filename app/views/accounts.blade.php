@@ -9,7 +9,7 @@
       <div id="section3">
         @include('partials.nav')
 
-        <div id="content-pane">
+        <div id="content-pane" class="page-content">
         </div>
 
       </div> <!-- section3 -->

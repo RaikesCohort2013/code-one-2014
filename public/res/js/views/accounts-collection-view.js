@@ -7,8 +7,9 @@ define([
     'collections/accounts-collection',
     'hb!../templates/account-list.html',
     'models/account-model',
-    'views/account-view'
-], function($, _, Backbone, Handlebars, Morris, AccountsCollection, Template, AccountModel, AccountView){
+    'views/account-view',
+    'selectize'
+], function($, _, Backbone, Handlebars, Morris, AccountsCollection, Template, AccountModel, AccountView, Selectize){
     var AccountsCollectionView = Backbone.View.extend({
         el: $('#content-pane'),
         views: [],
@@ -48,6 +49,7 @@ define([
                 var accountView = new AccountView({el: '#account-' + e.get('account_number') + '', model: e});
                 this.views[e.get('account_number')] = accountView;
             }, this);
+            this.$('.time').selectize({sortField: 'text'});
         },
     });
     return AccountsCollectionView;

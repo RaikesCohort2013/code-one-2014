@@ -10,7 +10,7 @@ define([
     var AccountsView = Backbone.View.extend({
         events: {
             'change select.time': 'renderGraphs',
-            'click div.account-header': 'toggleDetails',
+            'click .account-header': 'toggleDetails',
         },
         model: AccountModel,
         initialize: function(options){
@@ -174,6 +174,9 @@ define([
         toggleDetails: function() {
             this.renderGraphs();
             this.$('.account-detail-view').slideToggle();
+            var new_class = this.$('.account-dropdown > i').attr('data-toggle');
+            var old_class = this.$('.account-dropdown > i').attr('class');
+            this.$('.account-dropdown > i').removeClass(old_class).addClass(new_class).attr('data-toggle', old_class);
         }
     });
     return AccountsView;

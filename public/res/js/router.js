@@ -22,12 +22,12 @@ define([
             renderTransactions: function() {
                 var transactionsView = new TransactionsCollectionView();
                 $('li.nav-item').removeClass('active');
-                $('#nav-accounts').addClass('active');
+                $('#nav-transactions').addClass('active');
             },
             renderBudgets: function() {
                 var budgetView = new BudgetView();
                 $('li.nav-item').removeClass('active');
-                $('#nav-accounts').addClass('active');
+                $('#nav-budgets').addClass('active');
             },
             notFound: function(action) {
                 console.log(action, ': 404 not found');
