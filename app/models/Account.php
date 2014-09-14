@@ -8,4 +8,9 @@ class Account extends BaseModel
 		return Transaction::where('account_number', $this->account_number)->get();
 	}
 
+	public function limitTransactions()
+	{
+		return Transaction::where('account_number', $this->account_number)->limit(10)->get();
+	}
+
 }
