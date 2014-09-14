@@ -8,7 +8,8 @@ define([
         options: {},
         url: '/api/accounts/',
         initialize: function(options){
-            this.url = '/api/accounts/' + options.account_number + '/transactions/' + options.fromTime + '/' + options.toTime;
+            if (options != null && options.account_number != null && options.toTime != null && options.fromTime !== null)
+                this.url = '/api/accounts/' + options.account_number + '/transactions/' + options.fromTime + '/' + options.toTime;
         }
     });
     // You don't usually return a collection instantiated
