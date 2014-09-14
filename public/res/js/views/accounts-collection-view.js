@@ -27,6 +27,7 @@ define([
                 this.invalid_types = options.invalid_types;
         },
         render: function(){
+            console.log('wat')
             var displayModel = this.collection.by_type(this.invalid_types);
             console.log(displayModel, {types: displayModel});
             this.html = Template({types: displayModel});
@@ -38,7 +39,7 @@ define([
                     console.log(e);
                     var accountView = new AccountView({el: '#account-' + e.get('account_number'), model: e, has_graphs: true});
                     this.views[e.get('account_number')] = accountView;
-                    items[i++] = {label: e.get('name'), link: e.get('account_number')};
+                    items[i++] = {label: e.get('name'), link: '/accounts/' + e.get('account_number')};
                 }, this);
             }, this);
 

@@ -9,13 +9,14 @@ define([
     var TransactionsCollectionView = Backbone.View.extend({
         el: $('#content-pane'),
         collection: TransactionsCollection,
-        initialize: function() {
-            this.collection = new TransactionsCollection();
-            this.collection.add({id: 2});
+        initialize: function(options) {
+            var self = this;
+            this.collection = new TransactionsCollection(options);
             this.render();
         },
         render: function() {
-            var html = Template(this.collection.toJSON());
+            var keys = _.keys(this.collection.at(0));
+            var html = Template({keys: keys, transactions: this.collection.toJSON()});
             this.$el.html(html);
         }
     });
