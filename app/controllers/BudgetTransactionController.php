@@ -72,9 +72,13 @@ class BudgetTransactionController extends BaseController {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function update($id)
+	public function update($id, $budget_transaction)
 	{
-		//
+		$budgetTransaction = BudgetTransaction::find(id);
+		$budgetTransaction->transction_id = $budget_transaction->transction_id;
+		$budgetTransaction->amount = $budget_transaction->amount;
+		$budgetTransaction->tag_id = $budget_transaction->tag;
+		$budgetTransaction->save();
 	}
 
 	/**
@@ -86,7 +90,7 @@ class BudgetTransactionController extends BaseController {
 	 */
 	public function destroy($id)
 	{
-		//
+		BudgetTransaction::destroy($id);
 	}
 
 	private function jsonResponse($data)
