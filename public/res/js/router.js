@@ -7,15 +7,15 @@ define([
     'views/transactions-collection-view',
     'views/budget-view',
     'views/investments-view',
-    'views/parental-control-view',
-], function($, _, Backbone, App, AccountsCollectionView, TransactionsCollectionView, BudgetView, InvestmentsView, ParentalControlView){
+    'views/autopay-view',
+], function($, _, Backbone, App, AccountsCollectionView, TransactionsCollectionView, BudgetView, InvestmentsView, AutopayView){
         var AppRouter = Backbone.Router.extend({
             routes: {
                 'accounts' : 'renderAccounts',
                 'transactions': 'renderTransactions',
                 'budgets': 'renderBudgets',
                 'investment': 'renderInvestments',
-                'parental-control': 'renderParentalControl',
+                'autopay': 'renderAutoPay',
                 '*actions' : 'notFound',
             },
             renderAccounts: function() {
@@ -38,8 +38,8 @@ define([
                 $('li.nav-item').removeClass('active');
                 $('#nav-investment').addClass('active');
             },
-            renderParentalControl: function() {
-                var parentalControlView = new ParentalControlView();
+            renderAutoPay: function() {
+                var autopayView = new AutopayView();
                 $('li.nav-item').removeClass('active');
                 $('#nav-investment').addClass('active');
             },   

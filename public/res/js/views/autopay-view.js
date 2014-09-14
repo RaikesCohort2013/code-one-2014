@@ -3,9 +3,9 @@ define([
     'underscore',
     'backbone',
     'handlebars',
-    'hb!../templates/parent-control.html',
+    'hb!../templates/autopay.html',
 ], function($, _, Backbone, Handlebars, Template){
-    var ParentalControlView = Backbone.View.extend({
+    var AutopayView = Backbone.View.extend({
         el: $('#content-pane'),
         initialize: function() {
             this.render();
@@ -15,5 +15,5 @@ define([
             this.$el.html(html);
         }
     });
-    return ParentalControlView;
+    return AutopayView;
 })
