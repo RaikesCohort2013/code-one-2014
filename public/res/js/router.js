@@ -12,6 +12,7 @@ define([
                 'accounts' : 'renderAccounts',
                 'transactions': 'renderTransactions',
                 'budgets': 'renderBudgets',
+                'investment': 'renderInvestments',
                 '*actions' : 'notFound',
             },
             renderAccounts: function() {
@@ -28,6 +29,11 @@ define([
                 var budgetView = new BudgetView();
                 $('li.nav-item').removeClass('active');
                 $('#nav-budgets').addClass('active');
+            },
+            renderInvestments: function() {
+                var investmentView = new InvestmentsView();
+                $('li.nav-item').removeClass('active');
+                $('#nav-investment').addClass('active');
             },
             notFound: function(action) {
                 console.log(action, ': 404 not found');
