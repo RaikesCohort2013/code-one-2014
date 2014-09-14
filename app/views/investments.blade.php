@@ -62,8 +62,26 @@
             	Investments
           	</h1>
 
-          	
-
+          	<div class="investment-detail">
+                <h3>Allocation</h3>
+                
+                <h3>Diversity</h3>
+                
+                <h3>Portfolio</h3>
+                
+                <table class="table">
+                    <thead>
+                        <th>Investment Name</th>
+                        <th>Invesment Type</th>
+                        <th class="amount selected">Amount</th>
+                    </thead>
+                    <tr>
+                        <td>Jon's Mutual Fund</td>
+                        <td>Mutual Fund Investment</td>
+                        <td>12,849.80</td>
+                    </tr>
+                </table>
+            </div>
         </div>  
 
       </div> <!-- section3 -->
