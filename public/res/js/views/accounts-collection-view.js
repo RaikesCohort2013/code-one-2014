@@ -45,7 +45,8 @@ define([
             this.html = Template({types: displayModel});
             this.$el.html(this.html);
             _.each(this.collection.toArray(), function(e){
-                this.views[e.get('account_number')] = new AccountView({el: '#account-' + e.get('account_number') + '', model: e})
+                var accountView = new AccountView({el: '#account-' + e.get('account_number') + '', model: e});
+                this.views[e.get('account_number')] = accountView;
             }, this);
         },
     });

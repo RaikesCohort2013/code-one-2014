@@ -3,7 +3,7 @@
 Route::get('/{action?}', function()
 {
 	return View::make('accounts');
-})->where('action', '[A-Za-z]+');
+});
 
 Route::group(array('prefix' => 'api'), function()
 {

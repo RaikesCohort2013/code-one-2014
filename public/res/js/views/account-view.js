@@ -16,6 +16,10 @@ define([
         initialize: function(options){
             _.bindAll(this, 'graphBar');
             _.bindAll(this, 'graphPie');
+            this.render();
+        },
+        render: function() {
+            this.renderGraphs();
         },
         renderGraphs: function(){
             this.$('.pie-graph, .bar-graph').html('<img src="/res/img/loading.gif"/>'); // unset
