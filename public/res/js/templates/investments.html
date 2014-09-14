@@ -1,24 +1,97 @@
 <h1>
-Investments
+    Investments
 </h1>
 
 <div class="investment-detail">
-<h3>Allocation</h3>
-<p>*Put some dummy donut graph here*</p>
-<h3>Diversity</h3>
-<p>*Put some dummy donut graph here*</p>
-<h3>Portfolio</h3>
-<p>*Put some dummy bar graph here*</p>
-<table class="table">
-    <thead>
-        <th>Investment Name</th>
-        <th>Invesment Type</th>
-        <th class="amount selected">Amount</th>
-    </thead>
-    <tr>
-        <td>Jon's Mutual Fund</td>
-        <td>Mutual Fund Investment</td>
-        <td>12,849.80</td>
-    </tr>
-</table>
+    <div class="chart-area">
+
+        <div class="graph pie-graph investment-graph" id="graph-1" ></div>
+
+        <script>
+        Morris.Donut({
+          element: 'graph-1',
+          data: [
+          {label: "Mutual Fund", value:7000},
+          {label: "IRA", value: 30000},
+          {label: "CD", value: 9000}
+          ],
+          formatter: function (y, data) { return '$' + y },
+          backgroundColor: '#ccc',
+          labelColor: '#000',
+          colors: [
+          '#0D723c',
+          '#3D925c',
+          '#6DA27c',
+          '#9DC29c'
+          ],
+      });
+        </script>
+
+        <div class="graph pie-graph investment-graph" id="graph-2" ></div>
+
+        <script>
+        Morris.Donut({
+          element: 'graph-2',
+          data: [
+          {label: "Download Sales", value: 12},
+          {label: "In-Store Sales", value: 30},
+          {label: "Mail-Order Sales", value: 20}
+          ],
+          formatter: function (y, data) { return '$' + y } ,
+          backgroundColor: '#ccc',
+          labelColor: '#000',
+          colors: [
+          '#0D723c',
+          '#3D925c',
+          '#6DA27c',
+          '#9DC29c'
+          ],
+      });
+        </script>
+
+        <div class="graph pie-graph investment-graph" id="graph-3" ></div>
+
+        <script>
+        Morris.Donut({
+          element: 'graph-3',
+          data: [
+          {label: "Download Sales", value: 12},
+          {label: "In-Store Sales", value: 30},
+          {label: "Mail-Order Sales", value: 20}
+          ],
+          formatter: function (y, data) { return '$' + y },
+          backgroundColor: '#ccc',
+          labelColor: '#000',
+          colors: [
+          '#0D723c',
+          '#3D925c',
+          '#6DA27c',
+          '#9DC29c'
+          ],
+      });
+        </script>
+
+        <table class="table">
+            <thead>
+                <th>Investment Name</th>
+                <th>Investment Type</th>
+                <th class="amount selected">Amount</th>
+            </thead>
+            <tr>
+                <td>Mutual Fund</td>
+                <td>Mutual Fund Investment</td>
+                <td>$7000</td>
+            </tr>
+            <tr>
+                <td>IRA</td>
+                <td>Retirement</td>
+                <td>$30000</td>
+            </tr>
+            <tr>
+                <td>CD</td>
+                <td>Certificate of Deposit</td>
+                <td>$9000</td>
+            </tr>
+        </table>
+    </div>
 </div>
