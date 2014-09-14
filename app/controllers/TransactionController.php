@@ -11,7 +11,7 @@ class TransactionController extends BaseController
 	public function index($account_number)
 	{
 		$account = Account::where('account_number', $account_number)->firstOrFail();
-		$transactions = $account->transactions();
+		$transactions = $account->limitTransactions();
 		return $this->jsonResponse($transactions);
 	}
 
