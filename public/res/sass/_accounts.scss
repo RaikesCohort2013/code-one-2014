@@ -40,10 +40,6 @@
   padding: 4px;
 }
 .account-detail-view{
-  padding: 10px 0;
-  .chart-area {
-    @include outer-container();
-  }
   .graph {
     @include span-columns(6)
   }
