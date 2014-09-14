@@ -6,7 +6,7 @@
     {{#each accounts}}
     <div id="account-{{ account_number }}" class="account-view">
         <h3 class="thick-header" id="account-{{ account_number }}-header">
-            <span class="account-name">{{ name }}</span>
+            <span class="account-name"><a href="/accounts/{{account_number}}">{{ name }}</a></span>
             <span class="account-no">Acct. No: {{ account_number }}</span>
             <span class="account-bal">Balance: ${{ balance }}</span>
             <a class="account-dropdown" href="#"><i data-toggle="fa fa-chevron-up" class="fa fa-chevron-down"></i></a>
