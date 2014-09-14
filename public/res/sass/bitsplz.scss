@@ -26,6 +26,7 @@ $darker-green: #0a6238;
 /** 2-COLUMN LAYOUT **/
 #section3 {
   @include outer-container();
+  max-width: 85em !important;
 }
 .side-nav {
   @include span-columns(3);
