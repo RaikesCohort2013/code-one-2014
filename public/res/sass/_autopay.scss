@@ -1,0 +1,49 @@
+h2 {
+	margin-top: 10px;
+	margin-left: 7px;
+}
+
+div.content div.autopay-header {
+
+  background-color: #0d723c;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  margin-left: 7px;
+  margin-right: 7px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  @include span-columns(12);
+
+  span {
+    background-color: #0d723c;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    font-size: 1.3em;
+    font-style: inherit;
+  }
+
+  span.name {
+    padding-left: 10px;
+  }
+
+  span.next {
+  	float: right;
+  	padding-right: 20px;
+  }
+}
+
+div.content div.past-payment {
+	margin-top: 10px;
+	span {
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 1.3em;
+        font-style: inherit;
+  	}
+
+  	span.dollar {
+  		float: right;
+  	}
+}
