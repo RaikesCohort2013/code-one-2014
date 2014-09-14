@@ -3,7 +3,6 @@
         <li class="nav-item" id="nav-accounts">
             <a href="/accounts">Accounts</a>
             <ul class="sub-nav-list">
-                <li class="nav-item"><a href="">View Account Transactions</a></li>
             </ul>
         </li>
         <li class="nav-item" id="nav-transactions">
@@ -25,9 +24,8 @@
             </ul>
         </li>
         <li class="nav-item" id="nav-parental-control">
-            <a href="/parental-control">Parental Control</a>
+            <a href="/parental-control">Alerts and Parental Control</a>
             <ul class="sub-nav-list">
-                <li class="nav-item"><a href="">Manage Parent Controls</a></li>
             </ul>
         </li>
         <li class="nav-item" id="nav-autopay">
