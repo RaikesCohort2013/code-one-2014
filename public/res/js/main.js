@@ -10,6 +10,7 @@ require.config({
         backbone: 'lib/backbone-min',
         morris: 'lib/morris',
         raphael: 'lib/raphael-min',
+        selectize: 'lib/selectize-min',
     },
     shim: {
         'underscore' : {

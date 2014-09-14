@@ -9,3 +9,4 @@ Thumbs.db
 .idea/
 public/res/.sass-cache/
 public/res/stylesheets/
+*.css

@@ -1,0 +1,44 @@
+@import 'bourbon/bourbon';
+@import 'neat/neat';
+
+@import 'font-awesome';
+@import 'selectize';
+/** COLORS **/
+$dark-green: #0d723c;
+$darker-green: #0a6238;
+/** END COLORS **/
+
+/** mixins **/
+@mixin nb-gradient {
+  @include background-image(linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0) 100%));
+}
+
+@import 'morris-graphs';
+@import 'transaction-table';
+
+@import 'nav';
+
+/** Include page specifics **/
+@import 'accounts';
+/** end **/
+
+/** 2-COLUMN LAYOUT **/
+#section3 {
+  @include outer-container();
+}
+.side-nav {
+  @include span-columns(3);
+}
+.page-content {
+  @include span-columns(9);
+}
+/** END LAYOUT **/
+
+h1 {
+  text-transform: uppercase;
+  //text-align: center;
+  color: $darker-green;
+}
+#section3 {
+  overflow: hidden;
+}

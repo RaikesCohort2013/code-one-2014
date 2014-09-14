@@ -1,0 +1,52 @@
+.account-header {
+  @include outer-container();
+  background-color: $dark-green;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  @include nb-gradient();
+}
+.account-name {
+  @include span-columns(5);
+}
+.account-no, .account-bal {
+  @include span-columns(3);
+}
+.account-dropdown {
+  @include span-columns(1);
+}
+.type {
+  border-bottom: 1px dashed $dark-green;
+  padding: 8px 0;
+}
+.type:last-child {
+  border-bottom: 0;
+}
+.type-header {
+  color: $dark-green;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.account-detail-view {
+  display: none;
+}
+.account-view {
+  border-bottom: 1px solid green;
+}
+.account-view:last-child {
+  border-bottom: none;
+}
+.activity-container {
+  padding: 10px 0;
+}
+.activity-label, .time {
+  padding: 4px;
+}
+.account-detail-view{
+  .chart-area {
+    @include outer-container();
+  }
+  .graph {
+    @include span-columns(6)
+  }
+}
