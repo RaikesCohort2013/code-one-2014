@@ -2,12 +2,15 @@
 
 class Budget extends BaseModel
 {
-	
-	protected $table = 'budgets';
 
-	public function account()
+	protected $rules = [
+		'tag_id'	=> 'integer|required',
+		'amount'	=> 'double|required'
+	];
+	
+	public function tag()
 	{
-		return $this->belongsTo('Account', 'account_number', 'account_number');
+		return Tag::find($this->tag_id);
 	}
 
 }

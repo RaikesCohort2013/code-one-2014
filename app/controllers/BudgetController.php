@@ -10,7 +10,12 @@ class BudgetController extends BaseController
 	 */
 	public function index()
 	{
-		//
+		$budgets = Budget::all();
+		foreach($budgets as $budget)
+		{
+			$budget->tag_name = $budget->tag()->name;
+		}
+		return $this->jsonResponse($budgets);
 	}
 
 
@@ -21,7 +26,7 @@ class BudgetController extends BaseController
 	 */
 	public function create()
 	{
-		//
+
 	}
 
 
@@ -30,9 +35,16 @@ class BudgetController extends BaseController
 	 *
 	 * @return Response
 	 */
-	public function store()
+	public function store($budget)
 	{
-		//
+		$b = new Budget();
+		if($b->validate($budget))
+		{
+			Budget::create([
+				'tag_id'	=> $budget->tag_id,
+				'amount'	=> $budget->amount
+			]);
+		}
 	}
 
 
@@ -83,5 +95,11 @@ class BudgetController extends BaseController
 		//
 	}
 
+	private function jsonResponse($data)
+	{
+		$response = Response::make(json_encode($data));
+		$response->header('Content-Type', 'application/json');
+		return $response;
+	}
 
 }

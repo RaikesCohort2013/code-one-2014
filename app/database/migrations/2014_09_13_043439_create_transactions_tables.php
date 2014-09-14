@@ -14,7 +14,7 @@ class CreateTransactionsTables extends Migration {
 	{
 		Schema::create('transactions', function(Blueprint $table)
 		{
-			$table->increments('id');
+			$table->increments('id')->unsigned;
 			$table->string('sub_prod_cd')->nullable();
 			$table->integer('account_number')->unsigned();
 			$table->integer('tran_cd')->nullable();
