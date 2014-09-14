@@ -36,14 +36,11 @@
 .account-view:last-child {
   border-bottom: none;
 }
-.activity-container {
-  padding: 10px 0;
-}
 .activity-label, .time {
   padding: 4px;
 }
 .account-detail-view{
-  
+  padding: 8px 0;
   .graph {
     @include span-columns(6)
   }
