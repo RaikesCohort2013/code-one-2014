@@ -41,7 +41,7 @@ define([
             renderAutoPay: function() {
                 var autopayView = new AutopayView();
                 $('li.nav-item').removeClass('active');
-                $('#nav-investment').addClass('active');
+                $('#nav-autopay').addClass('active');
             },   
             notFound: function(action) {
                 console.log(action, ': 404 not found');

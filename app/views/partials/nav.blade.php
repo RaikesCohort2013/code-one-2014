@@ -41,7 +41,7 @@
         <li class="nav-item" id="nav-autopay">
             <a href="/autopay">Autopay</a>
             <ul class="sub-nav-list">
-                <li class="nav-item"><a href="">Item1</a></li>
+                <li class="nav-item"><a href="">Create/Edit AutoPayment</a></li>
             </ul>
         </li>
     </ul>
