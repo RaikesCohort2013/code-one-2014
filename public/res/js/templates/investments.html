@@ -27,8 +27,29 @@
       });
         </script>
 
-        <div class="graph pie-graph" id="graph-2" style="width:60%;float:left;"></div>
+        <div class="graph pie-graph investment-graph" id="graph-3" ></div>
 
+        <script>
+        Morris.Donut({
+          element: 'graph-3',
+          data: [
+          {label: "high cap", value:12000},
+          {label: "small cap", value: 24000},
+          {label: "med cap", value: 10000}
+          ],
+          formatter: function (y, data) { return '$' + y },
+          backgroundColor: '#ccc',
+          labelColor: '#000',
+          colors: [
+          '#0D723c',
+          '#3D925c',
+          '#6DA27c',
+          '#9DC29c'
+          ],
+      });
+        </script>
+
+        <div class="graph pie-graph" id="graph-2" style="width:85%;"></div>
         <script>
         Morris.Line({
           element: 'graph-2',
