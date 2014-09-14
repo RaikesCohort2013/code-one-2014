@@ -26,7 +26,7 @@ class BudgetController extends BaseController
 	 */
 	public function create()
 	{
-
+		// handled by backbone routes
 	}
 
 
@@ -56,7 +56,7 @@ class BudgetController extends BaseController
 	 */
 	public function show($id)
 	{
-		//
+		// handled by backbone routes
 	}
 
 
@@ -68,7 +68,7 @@ class BudgetController extends BaseController
 	 */
 	public function edit($id)
 	{
-		//
+		// handled by backbone routes
 	}
 
 
@@ -92,7 +92,7 @@ class BudgetController extends BaseController
 	 */
 	public function destroy($id)
 	{
-		//
+		Budget::destroy($id);
 	}
 
 	private function jsonResponse($data)
