@@ -35,7 +35,7 @@ define([
                     e = this.collection.findWhere({id: e.id});
                     var accountView = new AccountView({el: '#account-' + e.get('account_number') + '', model: e});
                     this.views[e.get('account_number')] = accountView;
-                    items[i++] = {label: e.get('name'), link: e.get('account_number')};
+                    items[i++] = {label: e.get('name'), link: '/parental-controls/' + e.get('account_number')};
                 }, this);
             }, this);
             $('#nav-parental-control .sub-nav-list').html(NavTemplate({items: items}));
