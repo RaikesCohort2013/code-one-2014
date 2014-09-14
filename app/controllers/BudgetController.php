@@ -10,7 +10,12 @@ class BudgetController extends BaseController
 	 */
 	public function index()
 	{
-		//
+		$budgets = Budget::all();
+		foreach($budgets as $budget)
+		{
+			$budget->tag_name = $budget->tag()->name;
+		}
+		return $this->jsonResponse($budgets);
 	}
 
 
@@ -88,6 +93,13 @@ class BudgetController extends BaseController
 	public function destroy($id)
 	{
 		//
+	}
+
+	private function jsonResponse($data)
+	{
+		$response = Response::make(json_encode($data));
+		$response->header('Content-Type', 'application/json');
+		return $response;
 	}
 
 }

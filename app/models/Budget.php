@@ -2,7 +2,7 @@
 
 class Budget extends BaseModel
 {
-	
+
 	protected $rules = [
 		'tag_id'	=> 'integer|required',
 		'amount'	=> 'double|required'
@@ -10,7 +10,7 @@ class Budget extends BaseModel
 	
 	public function tag()
 	{
-		return $this->hasOne('Tag');
+		return Tag::find($this->tag_id);
 	}
 
 }
