@@ -34,6 +34,10 @@ div#wrapper div#wrapper2 div.container div#section3 div
           padding-right: 15px
         &.selected-nav-item
           display: list-item
+        li.selected
+          background-color: #555
+          color: white
+          width: 70%
   &#content-pane
     h1
       font-size: 3.0em
@@ -70,6 +74,7 @@ div#wrapper div#wrapper2 div.container div#section3 div
           font-style: inherit
         > .account-name
           float: left
+
     div.past-budgets
       div.budget-header
         margin-top: 30px      
@@ -153,7 +158,65 @@ div#wrapper div#wrapper2 div.container div#section3 div
         progress.caution::-webkit-progress-value
           background: #bb0
 
-          
+div.create-budget
+  width: 730px
+  margin: 10px 10px 10px 10px
+  div.new-category 
+    width: 50%
+    margin: 0 auto
+    div.category-name
+      margin-bottom: 1px
+    span.category-entry
+      display: inline-block
+      font-size: 1.4em
+      font-style: inherit
+    input.category-input
+      margin-right: 10px
+      margin-left: 10px
+      padding: 5px 
+      border: 2px solid #ccc 
+      -webkit-border-radius: 5px
+      border-radius: 5px
+    input.add-category 
+      padding: 5px 15px 
+      background: #ccc 
+      border: 0 none
+      cursor: pointer
+      -webkit-border-radius: 3px
+      border-radius: 5px
+      text-style: inherit
+      font-size: 1.0em
+  table.create-budget
+    margin-top: 20px
+    margin-left: auto
+    margin-right: auto
+    margin-bottom: 30px
+    border: 1px solid black
+    td,
+    th
+      border: 1px solid black
+      padding: 10px 10px 10px 10px
+      text-align: center
+      font-size: 1.1em
+      font-style: inherit
+    th
+      background-color: #0d723c
+      color: white
+    td
+      background-color: white
+  div.save
+    margin-left: auto
+    margin-right: auto  
+    width: 35px
+    input.save-budget
+      padding: 5px 15px 
+      background: #ccc 
+      border: 0 none
+      cursor: pointer
+      -webkit-border-radius: 3px
+      border-radius: 5px
+      text-style: inherit
+      font-size: 1.0em
 
 .account-no-label, .account-no, .acconut-bal-label
   float: left

@@ -1,6 +1,5 @@
 @include('partials.header')
 
-
 <div id="">
 
   <div id="wrapper2">

@@ -2,7 +2,7 @@
 
 Route::get('/', function()
 {
-	return View::make('budgets');
+	return View::make('create_budget');
 });
 
 Route::group(array('prefix' => 'api'), function()
