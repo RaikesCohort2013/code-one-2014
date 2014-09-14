@@ -2,6 +2,8 @@
 
 (better) Raikes School team's repo for the Code One Omaha Hackathon
 
+Team 9: Tobin Brown, Jake Sanchez, Marcus Pasell
+
 ## To get this running
 
 - install virtualbox and vagrant
