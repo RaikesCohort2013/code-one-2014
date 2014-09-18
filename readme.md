@@ -4,6 +4,32 @@
 
 Team 9: Tobin Brown, Jake Sanchez, Marcus Pasell
 
+## Screenshots
+
+#### Accounts Menu
+
+![alt text](screenshots/accounts.png "Accounts")
+
+#### Transactions View
+
+![alt text](screenshots/transactions.png "Transactions")
+
+#### Budgets View
+
+![alt text](screenshots/budgetss.png "Budgets")
+
+#### Investments Menu
+
+![alt text](screenshots/investments.png "Investments")
+
+#### Alerts Menu
+
+![alt text](screenshots/alerts.png "Alerts")
+
+#### Autopay Menu
+
+![alt text](screenshots/autopay.png "Autopay")
+
 ## To get this running
 
 - install virtualbox and vagrant
