@@ -2,6 +2,8 @@
 
 (better) Raikes School team's repo for the Code One Omaha Hackathon
 
+We were assigned the job of redesigning the user's panel to enhance the existing panel and add more features like budgets, alerts and parental controls, and investments.
+
 Team 9: Tobin Brown, Jake Sanchez, Marcus Pasell
 
 ## Screenshots
