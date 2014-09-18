@@ -2,7 +2,35 @@
 
 (better) Raikes School team's repo for the Code One Omaha Hackathon
 
+We were assigned the job of redesigning the user's panel to enhance the existing panel and add more features like budgets, alerts and parental controls, and investments.
+
 Team 9: Tobin Brown, Jake Sanchez, Marcus Pasell
+
+## Screenshots
+
+#### Accounts Menu
+
+![alt text](screenshots/accounts.png "Accounts")
+
+#### Transactions View
+
+![alt text](screenshots/transactions.png "Transactions")
+
+#### Budgets View
+
+![alt text](screenshots/budgets.png "Budgets")
+
+#### Investments Menu
+
+![alt text](screenshots/investments.png "Investments")
+
+#### Alerts Menu
+
+![alt text](screenshots/alerts.png "Alerts")
+
+#### Autopay Menu
+
+![alt text](screenshots/autopay.png "Autopay")
 
 ## To get this running
 
