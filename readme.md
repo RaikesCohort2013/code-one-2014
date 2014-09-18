@@ -16,7 +16,7 @@ Team 9: Tobin Brown, Jake Sanchez, Marcus Pasell
 
 #### Budgets View
 
-![alt text](screenshots/budgetss.png "Budgets")
+![alt text](screenshots/budgets.png "Budgets")
 
 #### Investments Menu
 
